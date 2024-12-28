@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenIM</string>
+    <style name="SplashTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:background">@drawable/launch_background</item>
+    </style>
+    <declare-styleable name="BadgeButton">
+        <!-- 徽标文本，为空时显示一个小红点 -->
+        <attr format="string" name="btnBadgeText"/>
+        <!-- 徽标高度，宽度自适应 -->
+        <attr format="dimension" name="btnBadgeHeight"/>
+        <!-- 徽标背景色，文本白色 -->
+        <attr format="color" name="btnBadgeColor"/>
+        <!-- 徽标是否可见 -->
+        <attr format="boolean" name="btnBadgeVisible"/>
+    </declare-styleable>
+    <declare-styleable name="FullscreenAttrs">
+        <attr format="color" name="fullscreenBackgroundColor"/>
+        <attr format="color" name="fullscreenTextColor"/>
+    </declare-styleable>
+</resources>

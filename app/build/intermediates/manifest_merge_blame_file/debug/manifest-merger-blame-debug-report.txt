@@ -1,0 +1,1773 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="io.openim.android.demo"
+4    android:versionCode="8"
+5    android:versionName="1.0.8" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:6:5-8:36
+12        android:name="android.hardware.telephony"
+12-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:7:9-50
+13        android:required="false" />
+13-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:8:9-33
+14
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:9:5-75
+15-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:9:22-72
+16    <!-- getui -->
+17    <queries>
+17-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:11:5-15:15
+18        <intent>
+18-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:12:9-14:18
+19            <action android:name="com.getui.sdk.action" />
+19-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:13-59
+19-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:21-56
+20        </intent>
+21        <intent>
+21-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:12:9-14:18
+22            <action android:name="com.getui.vendor.action.push" />
+22-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:13:13-67
+22-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:13:21-64
+23        </intent>
+24        <intent>
+24-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:15:9-17:18
+25            <action android:name="com.sonymobile.action.service.DEVICE_SDK_INFO" />
+25-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:16:13-84
+25-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:16:21-81
+26        </intent>
+27        <intent>
+27-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:15:9-17:18
+28            <action android:name="com.huawei.hms.core.aidlservice" />
+28-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:16:13-70
+28-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:16:21-67
+29        </intent>
+30        <intent>
+30-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:18:9-20:18
+31            <action android:name="com.huawei.hms.core" />
+31-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:19:13-58
+31-->[com.huawei.hms:device:6.6.0.300] D:\gradle_files\caches\transforms-3\b27f821dc82d9c7eed05aa5a49189dab\transformed\jetified-device-6.6.0.300\AndroidManifest.xml:19:21-55
+32        </intent>
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+35-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:17:5-77
+35-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:17:22-74
+36    <uses-permission android:name="android.permission.CALL_PHONE" />
+36-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:18:5-69
+36-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:18:22-66
+37    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+37-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:19:5-77
+37-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:19:22-74
+38    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+38-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:20:5-22:47
+38-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:21:9-70
+39    <uses-permission android:name="android.permission.READ_SMS" />
+39-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:23:5-67
+39-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:23:22-64
+40    <uses-permission android:name="android.permission.SEND_SMS" />
+40-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:24:5-67
+40-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:24:22-64
+41    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+41-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:25:5-70
+41-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:25:22-67
+42    <uses-permission android:name="android.permission.INTERNET" />
+42-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:26:5-67
+42-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:26:22-64
+43    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+43-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:27:5-77
+43-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:27:22-74
+44    <uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+44-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:29:5-31:47
+44-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:30:9-61
+45    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 前台服务权限 -->
+45-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:32:5-77
+45-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:32:22-74
+46    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 手机通话状态权限 -->
+46-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:9:5-75
+46-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:9:22-72
+47    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+47-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:34:5-72
+47-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:34:22-69
+48    <uses-permission android:name="android.permission.FLASHLIGHT" />
+48-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-69
+48-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-66
+49
+50    <uses-feature android:name="android.hardware.camera" />
+50-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-60
+50-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:19-57
+51    <uses-feature android:name="android.hardware.camera.autofocus" />
+51-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-70
+51-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:19-67
+52
+53    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+53-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-71
+53-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-68
+54    <uses-permission android:name="android.permission.CAMERA" />
+54-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-65
+54-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:22-62
+55    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+55-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+55-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+56    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+56-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-81
+56-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-78
+57    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+57-->[dsahjkenw2.aar] D:\gradle_files\caches\transforms-3\41a04a127d8bdfa63ad8f69285ea8915\transformed\jetified-dsahjkenw2\AndroidManifest.xml:11:5-95
+57-->[dsahjkenw2.aar] D:\gradle_files\caches\transforms-3\41a04a127d8bdfa63ad8f69285ea8915\transformed\jetified-dsahjkenw2\AndroidManifest.xml:11:22-92
+58    <uses-permission
+58-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-68
+59        android:name="android.permission.BLUETOOTH"
+59-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-65
+60        android:maxSdkVersion="30" />
+60-->[com.github.davidliu:audioswitch:89582c47c9a04c62f90aa5e57251af4800a62c9a] D:\gradle_files\caches\transforms-3\674f460a3545cb3947aca6e36b3a7d33\transformed\jetified-audioswitch-89582c47c9a04c62f90aa5e57251af4800a62c9a\AndroidManifest.xml:11:9-35
+61    <uses-permission android:name="android.permission.REORDER_TASKS" />
+61-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-72
+61-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-69
+62    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+62-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-83
+62-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-80
+63    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+63-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:5-79
+63-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:22-76
+64    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+64-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:5-75
+64-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:22-72
+65    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+65-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:5-80
+65-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:22-77
+66    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+66-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:5-81
+66-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:22-78
+67    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+67-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-82
+67-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:22-79
+68
+69    <permission-group android:name="io.openim.android.demo.andpermission" /> <!-- 播音 -->
+69-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:5-71
+69-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:23-68
+70    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Always include this permission -->
+70-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:5-68
+70-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:22-65
+71    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Include only if your app benefits from precise location access. -->
+71-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:5-81
+71-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:22-78
+72    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+72-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:5-79
+72-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:22-76
+73    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+73-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:5-78
+73-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:22-75
+74    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+74-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:5-80
+74-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:22-77
+75    <uses-permission android:name="android.permission.VIBRATE" />
+75-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:5-66
+75-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:22-63
+76    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+76-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:13:5-88
+76-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:13:22-85
+77    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+77-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:15:5-84
+77-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:15:22-81
+78    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+78-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:16:5-75
+78-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:16:22-72
+79    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+79-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:16:5-76
+79-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:16:22-73
+80    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- oppo android12  需要 alarm权限 -->
+80-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:18:5-68
+80-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:18:22-65
+81    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+81-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:20:5-79
+81-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:20:22-76
+82    <uses-permission android:name="getui.permission.GetuiService.io.openim.android.demo" /> <!-- vivo角标 -->
+82-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:21:5-86
+82-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:21:22-83
+83    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" />
+83-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:23:5-83
+83-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:23:22-80
+84
+85    <permission
+85-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:25:5-27:47
+86        android:name="getui.permission.GetuiService.io.openim.android.demo"
+86-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:26:9-70
+87        android:protectionLevel="signature" />
+87-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:27:9-44
+88
+89    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+89-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:29:5-77
+89-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:29:22-74
+90    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+90-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:32:5-85
+90-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:32:22-82
+91
+92    <permission
+92-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:16:5-18:47
+93        android:name="io.openim.android.demo.permission.MIPUSH_RECEIVE"
+93-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:17:9-66
+94        android:protectionLevel="signature" />
+94-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:18:9-44
+95
+96    <uses-permission android:name="io.openim.android.demo.permission.MIPUSH_RECEIVE" />
+96-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:20:5-82
+96-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:20:22-79
+97    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+97-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:11:5-86
+97-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:11:22-83
+98    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" /> <!-- 魅族 -->
+98-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:12:5-85
+98-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:12:22-82
+99    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+99-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:12:5-79
+99-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:12:22-76
+100    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+100-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:13:5-73
+100-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:13:22-70
+101    <uses-permission android:name="io.openim.android.demo.push.permission.MESSAGE" />
+101-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:14:5-80
+101-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:14:22-77
+102    <uses-permission android:name="io.openim.android.demo.permission.C2D_MESSAGE" />
+102-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:15:5-79
+102-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:15:22-76
+103
+104    <permission
+104-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:17:5-19:47
+105        android:name="io.openim.android.demo.push.permission.MESSAGE"
+105-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:18:9-64
+106        android:protectionLevel="signature" />
+106-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:19:9-44
+107    <permission
+107-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:20:5-22:47
+108        android:name="io.openim.android.demo.permission.C2D_MESSAGE"
+108-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:21:9-63
+109        android:protectionLevel="signature" />
+109-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:22:9-44
+110    <permission
+110-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:11:5-13:55
+111        android:name="io.openim.android.demo.hihonor.permission.PROCESS_PUSH_MSG"
+111-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:12:9-76
+112        android:protectionLevel="signatureOrSystem" />
+112-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:13:9-52
+113
+114    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+114-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:15:5-95
+114-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:15:22-92
+115
+116    <permission
+116-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:9:5-11:47
+117        android:name="io.openim.android.demo.permission.PROCESS_PUSH_MSG"
+117-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:10:9-68
+118        android:protectionLevel="signature" /> <!-- PUSH_PROVIDER and PUSH_WRITE_PROVIDER are both provider registered permissions for the notification switch. -->
+118-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:11:9-44
+119    <!-- The SDK's notification bar switch, EMUI 9.x becomes write to the local sp, sharing the file through the provider to the push-rom, which reads the sp file to get the status of the notification bar switch. -->
+120    <permission
+120-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:14:5-16:47
+121        android:name="io.openim.android.demo.permission.PUSH_PROVIDER"
+121-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:15:9-65
+122        android:protectionLevel="signature" />
+122-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:16:9-44
+123    <permission
+123-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:17:5-19:47
+124        android:name="io.openim.android.demo.permission.PUSH_WRITE_PROVIDER"
+124-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:18:9-71
+125        android:protectionLevel="signature" />
+125-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:19:9-44
+126
+127    <uses-permission android:name="io.openim.android.demo.permission.PROCESS_PUSH_MSG" />
+127-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:21:5-84
+127-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:21:22-81
+128    <uses-permission android:name="io.openim.android.demo.permission.PUSH_PROVIDER" />
+128-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:22:5-81
+128-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:22:22-78
+129    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+129-->[io.openim:android-sdk:3.5.1-beta1] D:\gradle_files\caches\transforms-3\53a09dc1eca80c2fc9da4b0f3e76da0f\transformed\jetified-android-sdk-3.5.1-beta1\AndroidManifest.xml:10:5-79
+129-->[io.openim:android-sdk:3.5.1-beta1] D:\gradle_files\caches\transforms-3\53a09dc1eca80c2fc9da4b0f3e76da0f\transformed\jetified-android-sdk-3.5.1-beta1\AndroidManifest.xml:10:22-76
+130
+131    <permission
+131-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+132        android:name="io.openim.android.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+132-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+133        android:protectionLevel="signature" />
+133-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+134
+135    <uses-permission android:name="io.openim.android.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+135-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+135-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+136    <uses-permission android:name="com.meizu.flyme.permission.PUSH" /> <!-- 获取来电号码权限 -->
+136-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:15:5-71
+136-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:15:22-68
+137    <application
+137-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:35:5-159:19
+138        android:name="io.openim.android.demo.DemoApplication"
+138-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:36:9-40
+139        android:allowBackup="true"
+139-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:37:9-35
+140        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+140-->[androidx.core:core:1.10.1] D:\gradle_files\caches\transforms-3\71256c2e069c0a625089526e35dd22b4\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+141        android:debuggable="true"
+142        android:icon="@mipmap/ic_launcher"
+142-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:38:9-43
+143        android:label="@string/app_name"
+143-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:39:9-41
+144        android:localeConfig="@xml/locales_config"
+144-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:40:9-51
+145        android:networkSecurityConfig="@xml/network_security_config"
+145-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:41:9-69
+146        android:requestLegacyExternalStorage="true"
+146-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:42:9-52
+147        android:roundIcon="@mipmap/ic_launcher_round"
+147-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:43:9-54
+148        android:supportsRtl="true"
+148-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:44:9-35
+149        android:theme="@style/Theme.Main"
+149-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:45:9-42
+150        android:usesCleartextTraffic="true" >
+150-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:46:9-44
+151        <service
+151-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:48:9-51:47
+152            android:name="io.openim.android.demo.PhoneStateService"
+152-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:49:13-46
+153            android:enabled="true"
+153-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:50:13-35
+154            android:exported="true" />
+154-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:51:13-36
+155        <service
+155-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:53:9-56:47
+156            android:name="io.openim.android.demo.SMSService"
+156-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:54:13-39
+157            android:enabled="true"
+157-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:55:13-35
+158            android:exported="true" />
+158-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:56:13-36
+159
+160        <activity
+160-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:58:9-60:40
+161            android:name="io.openim.android.demo.ui.user.ChangePasswordActivity"
+161-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:59:13-59
+162            android:exported="false" />
+162-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:60:13-37
+163        <activity
+163-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:61:9-63:40
+164            android:name="io.openim.android.demo.ui.user.LanguageSettingActivity"
+164-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:62:13-60
+165            android:exported="false" />
+165-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:63:13-37
+166        <activity
+166-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:64:9-70:20
+167            android:name="io.openim.android.demo.ui.login.ResetPasswordActivity"
+167-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:65:13-59
+168            android:exported="false" >
+168-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:66:13-37
+169            <meta-data
+169-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:67:13-69:36
+170                android:name="android.app.lib_name"
+170-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:68:17-52
+171                android:value="" />
+171-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:69:17-33
+172        </activity>
+173        <activity
+173-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:71:9-77:20
+174            android:name="io.openim.android.demo.ui.user.BlackListActivity"
+174-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:72:13-54
+175            android:exported="false" >
+175-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:73:13-37
+176            <meta-data
+176-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:67:13-69:36
+177                android:name="android.app.lib_name"
+177-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:68:17-52
+178                android:value="" />
+178-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:69:17-33
+179        </activity>
+180        <activity
+180-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:78:9-80:40
+181            android:name="io.openim.android.demo.ui.user.AccountSettingActivity"
+181-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:79:13-59
+182            android:exported="false" />
+182-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:80:13-37
+183
+184        <service
+184-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:82:9-86:46
+185            android:name="io.openim.android.demo.services.GetuiPushService"
+185-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:83:13-54
+186            android:exported="false"
+186-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:84:13-37
+187            android:label="PushService"
+187-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:85:13-40
+188            android:process=":pushservice" />
+188-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:86:13-43
+189
+190        <activity
+190-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:88:9-90:40
+191            android:name="io.openim.android.demo.ui.ServerConfigActivity"
+191-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:89:13-52
+192            android:exported="false" />
+192-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:90:13-37
+193        <activity
+193-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:91:9-93:40
+194            android:name="io.openim.android.demo.ui.user.AboutUsActivity"
+194-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:92:13-52
+195            android:exported="false" />
+195-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:93:13-37
+196        <activity
+196-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:94:9-96:40
+197            android:name="io.openim.android.demo.ui.main.CallHistoryActivity"
+197-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:95:13-56
+198            android:exported="false" />
+198-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:96:13-37
+199        <activity
+199-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:97:9-99:40
+200            android:name="io.openim.android.demo.ui.user.MoreDataActivity"
+200-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:98:13-53
+201            android:exported="false" />
+201-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:99:13-37
+202        <activity
+202-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:100:9-102:40
+203            android:name="io.openim.android.demo.ui.user.PersonDataActivity"
+203-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:101:13-55
+204            android:exported="false" />
+204-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:102:13-37
+205        <activity
+205-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:103:9-105:40
+206            android:name="io.openim.android.demo.ui.main.EditTextActivity"
+206-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:104:13-53
+207            android:exported="false" />
+207-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:105:13-37
+208        <activity
+208-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:106:9-108:40
+209            android:name="io.openim.android.demo.ui.user.PersonalInfoActivity"
+209-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:107:13-57
+210            android:exported="false" />
+210-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:108:13-37
+211        <activity
+211-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:109:9-111:40
+212            android:name="io.openim.android.demo.ui.login.SupplementInfoActivity"
+212-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:110:13-60
+213            android:exported="false" />
+213-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:111:13-37
+214        <activity
+214-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:112:9-114:40
+215            android:name="io.openim.android.demo.ui.login.VerificationCodeActivity"
+215-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:113:13-62
+216            android:exported="false" />
+216-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:114:13-37
+217        <activity
+217-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:115:9-117:40
+218            android:name="io.openim.android.demo.ui.search.SendVerifyActivity"
+218-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:116:13-57
+219            android:exported="false" />
+219-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:117:13-37
+220        <activity
+220-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:118:9-120:40
+221            android:name="io.openim.android.demo.ui.search.PersonDetailActivity"
+221-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:119:13-59
+222            android:exported="false" />
+222-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:120:13-37
+223        <activity
+223-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:121:9-123:40
+224            android:name="io.openim.android.demo.ui.search.SearchContactActivity"
+224-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:122:13-60
+225            android:exported="false" />
+225-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:123:13-37
+226        <activity
+226-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:124:9-126:40
+227            android:name="io.openim.android.demo.ui.search.AddConversActivity"
+227-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:125:13-57
+228            android:exported="false" />
+228-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:126:13-37
+229        <activity
+229-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:127:9-129:40
+230            android:name="io.openim.android.demo.ui.login.RegisterActivity"
+230-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:128:13-54
+231            android:exported="false" />
+231-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:129:13-37
+232        <activity
+232-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:130:9-133:47
+233            android:name="io.openim.android.demo.ui.login.LoginActivity"
+233-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:131:13-51
+234            android:exported="false"
+234-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:132:13-37
+235            android:launchMode="singleTask" />
+235-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:133:13-44
+236        <activity
+236-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:134:9-143:20
+237            android:name="io.openim.android.demo.SplashActivity"
+237-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:135:13-43
+238            android:exported="true"
+238-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:136:13-36
+239            android:theme="@style/SplashTheme" >
+239-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:137:13-47
+240            <intent-filter>
+240-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:138:13-142:29
+241                <action android:name="android.intent.action.MAIN" />
+241-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:139:17-69
+241-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:139:25-66
+242
+243                <category android:name="android.intent.category.LAUNCHER" />
+243-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:141:17-77
+243-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:141:27-74
+244            </intent-filter>
+245        </activity>
+246        <activity
+246-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:144:9-148:58
+247            android:name="io.openim.android.demo.ui.main.MainActivity"
+247-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:145:13-49
+248            android:launchMode="singleTask"
+248-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:146:13-44
+249            android:theme="@style/NotAnimation"
+249-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:147:13-48
+250            android:windowSoftInputMode="adjustResize" />
+250-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:148:13-55
+251
+252        <provider
+253            android:name="androidx.core.content.FileProvider"
+253-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:151:13-62
+254            android:authorities="io.openim.android.demo.fileProvider"
+254-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:152:13-64
+255            android:exported="false"
+255-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:153:13-37
+256            android:grantUriPermissions="true" >
+256-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:154:13-47
+257            <meta-data
+257-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:155:13-157:54
+258                android:name="android.support.FILE_PROVIDER_PATHS"
+258-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:156:17-67
+259                android:resource="@xml/file_paths" />
+259-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:157:17-51
+260        </provider>
+261
+262        <activity
+262-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-20:40
+263            android:name="io.openim.android.ouiconversation.ui.ChatHistoryRelationActivity"
+263-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-92
+264            android:exported="false" />
+264-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+265        <activity
+265-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-23:40
+266            android:name="io.openim.android.ouiconversation.ui.NotificationActivity"
+266-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-85
+267            android:exported="false" />
+267-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+268        <activity
+268-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-26:40
+269            android:name="io.openim.android.ouiconversation.ui.ChatHistoryDetailsActivity"
+269-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-91
+270            android:exported="false" />
+270-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-37
+271        <activity
+271-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:9-29:40
+272            android:name="io.openim.android.ouiconversation.ui.MsgReadStatusActivity"
+272-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-86
+273            android:exported="false" />
+273-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-37
+274        <activity
+274-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:9-32:40
+275            android:name="io.openim.android.ouiconversation.ui.SearchActivity"
+275-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-79
+276            android:exported="false" />
+276-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-37
+277        <activity
+277-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:9-35:40
+278            android:name="io.openim.android.ouiconversation.ui.FileHistoryActivity"
+278-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:34:13-84
+279            android:exported="false" />
+279-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-37
+280        <activity
+280-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:9-38:40
+281            android:name="io.openim.android.ouiconversation.ui.MediaHistoryActivity"
+281-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-85
+282            android:exported="false" />
+282-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-37
+283        <activity
+283-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:9-41:40
+284            android:name="io.openim.android.ouiconversation.ui.SetChatBgActivity"
+284-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-82
+285            android:exported="false" />
+285-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-37
+286        <activity
+286-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:9-44:40
+287            android:name="io.openim.android.ouiconversation.ui.ChatSettingActivity"
+287-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-84
+288            android:exported="false" />
+288-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+289        <activity
+289-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:40
+290            android:name="io.openim.android.ouiconversation.ui.ChatHistorySearchActivity"
+290-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-90
+291            android:exported="false" />
+291-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-37
+292        <activity
+292-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:9-50:40
+293            android:name="io.openim.android.ouiconversation.ui.PreviewMediaActivity"
+293-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-85
+294            android:exported="false" />
+294-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:13-37
+295        <activity
+295-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:9-53:40
+296            android:name="io.openim.android.ouiconversation.ui.ShootActivity"
+296-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:52:13-78
+297            android:exported="false" />
+297-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:13-37
+298        <activity
+298-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:9-56:40
+299            android:name="io.openim.android.ouiconversation.ui.ChatActivity"
+299-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:55:13-77
+300            android:exported="false" />
+300-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:56:13-37
+301        <activity android:name="io.openim.android.ouiconversation.ui.emoji.CustomEmojiManageActivity" />
+301-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:9-105
+301-->[:OUIConversation] D:\IM\open-im-android-demo\OUIKit\OUIConversation\build\intermediates\merged_manifest\debug\AndroidManifest.xml:57:19-102
+302        <activity
+302-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:40
+303            android:name="io.openim.android.ouigroup.ui.v3.GroupManageActivity"
+303-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-80
+304            android:exported="false" />
+304-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+305        <activity
+305-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-15:40
+306            android:name="io.openim.android.ouigroup.ui.AllGroupActivity"
+306-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-74
+307            android:exported="false" />
+307-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+308        <activity
+308-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+309            android:name="io.openim.android.ouigroup.ui.v3.SelectTargetActivityV3"
+309-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-83
+310            android:exported="false" />
+310-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+311        <activity
+311-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-25:20
+312            android:name="io.openim.android.ouigroup.ui.SetMuteActivity"
+312-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-73
+313            android:exported="false" >
+313-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+314            <meta-data
+314-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:67:13-69:36
+315                android:name="android.app.lib_name"
+315-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:68:17-52
+316                android:value="" />
+316-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:69:17-33
+317        </activity>
+318        <activity
+318-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-28:40
+319            android:name="io.openim.android.ouigroup.ui.SelectedMemberActivity"
+319-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-80
+320            android:exported="false" />
+320-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
+321        <activity
+321-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-31:40
+322            android:name="io.openim.android.ouigroup.ui.MemberPermissionActivity"
+322-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-82
+323            android:exported="false" />
+323-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-37
+324        <activity
+324-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:9-34:40
+325            android:name="io.openim.android.ouigroup.ui.NoticeDetailActivity"
+325-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-78
+326            android:exported="false" />
+326-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:34:13-37
+327        <activity
+327-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-37:40
+328            android:name="io.openim.android.ouigroup.ui.ShareQrcodeActivity"
+328-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-77
+329            android:exported="false" />
+329-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-37
+330        <activity
+330-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:9-40:40
+331            android:name="io.openim.android.ouigroup.ui.GroupBulletinActivity"
+331-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-79
+332            android:exported="false" />
+332-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-37
+333        <activity
+333-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-43:40
+334            android:name="io.openim.android.ouigroup.ui.GroupMemberActivity"
+334-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-77
+335            android:exported="false" />
+335-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+336        <activity
+336-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:44:9-46:40
+337            android:name="io.openim.android.ouigroup.ui.SuperGroupMemberActivity"
+337-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-82
+338            android:exported="false" />
+338-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+339        <activity
+339-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:9-49:40
+340            android:name="io.openim.android.ouigroup.ui.GroupMaterialActivity"
+340-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-79
+341            android:exported="false" />
+341-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:13-37
+342        <activity
+342-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:9-52:40
+343            android:name="io.openim.android.ouigroup.ui.CreateGroupActivity"
+343-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-77
+344            android:exported="false" />
+344-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:52:13-37
+345        <activity android:name="io.openim.android.ouigroup.ui.InitiateGroupActivity" />
+345-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:9-88
+345-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:53:19-85
+346        <activity android:name="io.openim.android.ouigroup.ui.GroupDetailActivity" />
+346-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:9-86
+346-->[:OUIGroup] D:\IM\open-im-android-demo\OUIKit\OUIGroup\build\intermediates\merged_manifest\debug\AndroidManifest.xml:54:19-83
+347        <activity
+347-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:40
+348            android:name="io.openim.android.ouicontact.ui.AddRelationActivity"
+348-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-79
+349            android:exported="false" />
+349-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+350        <activity
+350-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-15:40
+351            android:name="io.openim.android.ouicontact.ui.search.SearchGroupActivity"
+351-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-86
+352            android:exported="false" />
+352-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+353        <activity
+353-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+354            android:name="io.openim.android.ouicontact.ui.search.SearchGroupAndFriendsActivity"
+354-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-96
+355            android:exported="false" />
+355-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+356        <activity
+356-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
+357            android:name="io.openim.android.ouicontact.ui.CreateLabelActivity"
+357-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-79
+358            android:exported="false" />
+358-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+359        <activity
+359-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-24:40
+360            android:name="io.openim.android.ouicontact.ui.LabelActivity"
+360-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-73
+361            android:exported="false" />
+361-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+362        <activity
+362-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-27:40
+363            android:name="io.openim.android.ouicontact.ui.search.SearchGroupMemberActivity"
+363-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-92
+364            android:exported="false" />
+364-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-37
+365        <activity
+365-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-30:40
+366            android:name="io.openim.android.ouicontact.ui.MyGroupActivity"
+366-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-75
+367            android:exported="false" />
+367-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-37
+368        <activity
+368-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:31:9-33:40
+369            android:name="io.openim.android.ouicontact.ui.ForwardToActivity"
+369-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-77
+370            android:exported="false" />
+370-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-37
+371        <activity
+371-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-36:40
+372            android:name="io.openim.android.ouicontact.ui.AllFriendActivity"
+372-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-77
+373            android:exported="false" />
+373-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-37
+374        <activity
+374-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-39:40
+375            android:name="io.openim.android.ouicontact.ui.FriendRequestDetailActivity"
+375-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-87
+376            android:exported="false" />
+376-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:13-37
+377        <activity
+377-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-42:40
+378            android:name="io.openim.android.ouicontact.ui.NewFriendActivity"
+378-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-77
+379            android:exported="false" />
+379-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-37
+380        <activity
+380-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-45:40
+381            android:name="io.openim.android.ouicontact.ui.GroupNoticeListActivity"
+381-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-83
+382            android:exported="false" />
+382-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-37
+383        <activity
+383-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:46:9-48:40
+384            android:name="io.openim.android.ouicontact.ui.GroupNoticeDetailActivity"
+384-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-85
+385            android:exported="false" />
+385-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:48:13-37
+386        <activity
+386-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:49:9-51:39
+387            android:name="io.openim.android.ouicontact.DebugActivity"
+387-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:50:13-70
+388            android:exported="true" />
+388-->[:OUIContact] D:\IM\open-im-android-demo\OUIKit\OUIContact\build\intermediates\merged_manifest\debug\AndroidManifest.xml:51:13-36
+389        <activity
+389-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-18:55
+390            android:name="io.openim.android.ouicalling.LockPushActivity"
+390-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-73
+391            android:exported="false"
+391-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-37
+392            android:launchMode="singleInstance"
+392-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-48
+393            android:screenOrientation="portrait"
+393-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-49
+394            android:theme="@style/ThemeWithoutAnim" />
+394-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-52
+395
+396        <service
+396-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-22:40
+397            android:name="io.openim.android.ouicalling.service.AudioVideoService"
+397-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-82
+398            android:exported="false" />
+398-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+399
+400        <receiver
+400-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-31:20
+401            android:name="p3dn6v.h4wm1s.k2ro8t.X1rY6p"
+401-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-55
+402            android:exported="true" >
+402-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-36
+403            <intent-filter android:priority="1000" >
+403-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-30:29
+403-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:27:28-51
+404                <action android:name="android.intent.action.BOOT_COMPLETED" />
+404-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-79
+404-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-76
+405                <action android:name="android.intent.action.REBOOT" />
+405-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-71
+405-->[:OUICalling] D:\IM\open-im-android-demo\OUIKit\OUICalling\build\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-68
+406            </intent-filter>
+407        </receiver> <!-- <meta-data -->
+408        <!-- android:name="ScopedStorage" -->
+409        <!-- android:value="true" /> -->
+410        <activity
+410-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:36:9-38:40
+411            android:name="io.openim.android.ouicore.widget.SingleInfoModifyActivity"
+411-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-85
+412            android:exported="false" />
+412-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-37
+413        <activity
+413-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:39:9-41:40
+414            android:name="io.openim.android.ouicore.widget.WebViewActivity"
+414-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:40:13-76
+415            android:exported="false" />
+415-->[:OUICore] D:\IM\open-im-android-demo\OUIKit\OUICore\build\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-37
+416
+417        <service
+417-->[io.livekit:livekit-android:2.0.1] D:\gradle_files\caches\transforms-3\6e5bf7fe608b31fbe2329ee4e906f82c\transformed\jetified-livekit-android-2.0.1\AndroidManifest.xml:29:9-33:43
+418            android:name="io.livekit.android.room.track.screencapture.ScreenCaptureService"
+418-->[io.livekit:livekit-android:2.0.1] D:\gradle_files\caches\transforms-3\6e5bf7fe608b31fbe2329ee4e906f82c\transformed\jetified-livekit-android-2.0.1\AndroidManifest.xml:30:13-92
+419            android:enabled="true"
+419-->[io.livekit:livekit-android:2.0.1] D:\gradle_files\caches\transforms-3\6e5bf7fe608b31fbe2329ee4e906f82c\transformed\jetified-livekit-android-2.0.1\AndroidManifest.xml:31:13-35
+420            android:foregroundServiceType="mediaProjection"
+420-->[io.livekit:livekit-android:2.0.1] D:\gradle_files\caches\transforms-3\6e5bf7fe608b31fbe2329ee4e906f82c\transformed\jetified-livekit-android-2.0.1\AndroidManifest.xml:32:13-60
+421            android:stopWithTask="true" />
+421-->[io.livekit:livekit-android:2.0.1] D:\gradle_files\caches\transforms-3\6e5bf7fe608b31fbe2329ee4e906f82c\transformed\jetified-livekit-android-2.0.1\AndroidManifest.xml:33:13-40
+422
+423        <activity android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateBackgroundActivity" />
+423-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:24:9-109
+423-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:24:19-106
+424        <activity
+424-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:25:9-27:58
+425            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType12Activity"
+425-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:26:13-96
+426            android:theme="@style/DialogActivityTheme" />
+426-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:27:13-55
+427        <activity
+427-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:28:9-30:58
+428            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType11Activity"
+428-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:29:13-96
+429            android:theme="@style/DialogActivityTheme" />
+429-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:30:13-55
+430        <activity
+430-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:31:9-33:58
+431            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType10Activity"
+431-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:32:13-96
+432            android:theme="@style/DialogActivityTheme" />
+432-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:33:13-55
+433        <activity
+433-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:34:9-36:58
+434            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType9Activity"
+434-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:35:13-95
+435            android:theme="@style/DialogActivityTheme" />
+435-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:36:13-55
+436        <activity
+436-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:37:9-39:58
+437            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType8Activity"
+437-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:38:13-95
+438            android:theme="@style/DialogActivityTheme" />
+438-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:39:13-55
+439        <activity
+439-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:40:9-42:58
+440            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType7Activity"
+440-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:41:13-95
+441            android:theme="@style/DialogActivityTheme" />
+441-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:42:13-55
+442        <activity
+442-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:43:9-45:58
+443            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType6Activity"
+443-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:44:13-95
+444            android:theme="@style/DialogActivityTheme" />
+444-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:45:13-55
+445        <activity
+445-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:46:9-48:58
+446            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType5Activity"
+446-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:47:13-95
+447            android:theme="@style/DialogActivityTheme" />
+447-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:48:13-55
+448        <activity
+448-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:49:9-51:58
+449            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType4Activity"
+449-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:50:13-95
+450            android:theme="@style/DialogActivityTheme" />
+450-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:51:13-55
+451        <activity
+451-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:52:9-54:58
+452            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType3Activity"
+452-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:53:13-95
+453            android:theme="@style/DialogActivityTheme" />
+453-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:54:13-55
+454        <activity
+454-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:55:9-57:58
+455            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType2Activity"
+455-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:56:13-95
+456            android:theme="@style/DialogActivityTheme" />
+456-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:57:13-55
+457        <activity
+457-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:58:9-60:58
+458            android:name="com.cretin.www.cretinautoupdatelibrary.activity.UpdateType1Activity"
+458-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:59:13-95
+459            android:theme="@style/DialogActivityTheme" />
+459-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:60:13-55
+460
+461        <service android:name="com.cretin.www.cretinautoupdatelibrary.service.UpdateService" /> <!-- 老版本的服务 -->
+461-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:62:9-96
+461-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:62:18-93
+462        <service android:name="com.cretin.www.cretinautoupdatelibrary.utils.DownloadService" />
+462-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:63:9-96
+462-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:63:18-93
+463
+464        <provider
+464-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:65:9-73:20
+465            android:name="com.cretin.www.cretinautoupdatelibrary.utils.InstallFileProvider"
+465-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:66:13-92
+466            android:authorities="io.openim.android.demo.fileprovider"
+466-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:67:13-64
+467            android:exported="false"
+467-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:68:13-37
+468            android:grantUriPermissions="true" >
+468-->[com.github.MZCretin:AutoUpdateProject:2.0.5] D:\gradle_files\caches\transforms-3\9d70afe27050a0d38f43de165d40766e\transformed\jetified-AutoUpdateProject-2.0.5\AndroidManifest.xml:69:13-47
+469            <meta-data
+469-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:155:13-157:54
+470                android:name="android.support.FILE_PROVIDER_PATHS"
+470-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:156:17-67
+471                android:resource="@xml/install_file" />
+471-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:157:17-51
+472        </provider>
+473
+474        <activity android:name="com.zhihu.matisse.ui.MatisseActivity" />
+474-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:28:9-73
+474-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:28:19-70
+475        <activity
+475-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:29:9-31:63
+476            android:name="com.zhihu.matisse.ui.CaptureDelegateActivity"
+476-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:30:13-72
+477            android:theme="@style/Matisse.TransparentTheme" />
+477-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:31:13-60
+478        <activity android:name="com.zhihu.matisse.internal.ui.AlbumPreviewActivity" />
+478-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:32:9-87
+478-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:32:19-84
+479        <activity android:name="com.zhihu.matisse.internal.ui.SelectedPreviewActivity" />
+479-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:33:9-90
+479-->[com.github.lwj1994:Matisse:0.5.3-20220115] D:\gradle_files\caches\transforms-3\6375f0deef5a207510331c4694416306\transformed\jetified-Matisse-0.5.3-20220115\AndroidManifest.xml:33:19-87
+480
+481        <meta-data
+481-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:38:9-40:46
+482            android:name="GETUI_APPID"
+482-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:39:13-39
+483            android:value="" /> <!-- ⽤来登记渠道的信息 -->
+483-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:40:13-43
+484        <meta-data
+484-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:43:9-45:48
+485            android:name="ZX_CHANNEL_ID"
+485-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:44:13-41
+486            android:value="C01-GEztJH0JLdBC" /> <!-- ⽤来注册登记第三⽅ SDK 的 AppId 信息 -->
+486-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:45:13-45
+487        <meta-data
+487-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:48:9-50:68
+488            android:name="ZX_APPID_GETUI"
+488-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:49:13-42
+489            android:value="42996480-14d9-43f1-bd27-b85f780b0582" /> <!-- 配置SDK核心服务 -->
+489-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:50:13-65
+490        <service
+490-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:53:9-57:46
+491            android:name="com.igexin.sdk.PushService"
+491-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:54:13-54
+492            android:exported="false"
+492-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:55:13-37
+493            android:label="NotificationCenter"
+493-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:56:13-47
+494            android:process=":pushservice" />
+494-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:57:13-43
+495
+496        <receiver
+496-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:59:9-66:20
+497            android:name="com.igexin.sdk.PushReceiver"
+497-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:60:13-55
+498            android:exported="false" >
+498-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:61:13-37
+499            <intent-filter>
+499-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:62:13-65:29
+500                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+500-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:63:17-79
+500-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:63:25-76
+501                <action android:name="android.intent.action.USER_PRESENT" />
+501-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:64:17-77
+501-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:64:25-74
+502            </intent-filter>
+503        </receiver>
+504
+505        <activity
+505-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:68:9-72:75
+506            android:name="com.igexin.sdk.PushActivity"
+506-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:69:13-55
+507            android:excludeFromRecents="true"
+507-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:70:13-46
+508            android:process=":pushservice"
+508-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:71:13-43
+509            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+509-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:72:13-72
+510        <activity
+510-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:73:9-83:20
+511            android:name="com.igexin.sdk.GActivity"
+511-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:74:13-52
+512            android:excludeFromRecents="true"
+512-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:75:13-46
+513            android:exported="true"
+513-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:76:13-36
+514            android:process=":pushservice"
+514-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:77:13-43
+515            android:taskAffinity="io.openim.android.demo.GActivity"
+515-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:78:13-62
+516            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+516-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:79:13-72
+517            <intent-filter>
+517-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:80:13-82:29
+518                <action android:name="com.getui.sdk.action" />
+518-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:13-59
+518-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:21-56
+519            </intent-filter>
+520        </activity>
+521
+522        <service android:name="com.igexin.sdk.GTIntentService" >
+522-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:85:9-86:19
+522-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:85:18-63
+523        </service>
+524        <service
+524-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:87:9-94:19
+525            android:name="com.igexin.sdk.GService"
+525-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:88:13-51
+526            android:exported="true"
+526-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:89:13-36
+527            android:process=":pushservice" >
+527-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:90:13-43
+528            <intent-filter>
+528-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:80:13-82:29
+529                <action android:name="com.getui.sdk.action" />
+529-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:13-59
+529-->D:\IM\open-im-android-demo\Demo\app\src\main\AndroidManifest.xml:13:21-56
+530            </intent-filter>
+531        </service>
+532
+533        <activity
+533-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:96:9-101:75
+534            android:name="com.igexin.sdk.GetuiActivity"
+534-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:97:13-56
+535            android:excludeFromRecents="true"
+535-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:98:13-46
+536            android:exported="true"
+536-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:99:13-36
+537            android:process=":pushservice"
+537-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:100:13-43
+538            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+538-->[com.getui:gtsdk:3.2.13.0] D:\gradle_files\caches\transforms-3\6be875067750865135ceba9fbd30d21e\transformed\jetified-gtsdk-3.2.13.0\AndroidManifest.xml:101:13-72
+539
+540        <service
+540-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:16:9-22:19
+541            android:name="com.getui.gtc.GtcService"
+541-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:17:13-52
+542            android:exported="false" >
+542-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:18:13-37
+543            <intent-filter>
+543-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:19:13-21:29
+544                <action android:name="com.getui.gtc.sdk.service.action" />
+544-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:20:17-75
+544-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:20:25-72
+545            </intent-filter>
+546        </service>
+547
+548        <provider
+548-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:24:9-27:40
+549            android:name="com.getui.gtc.base.GtcProvider"
+549-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:25:13-58
+550            android:authorities="io.openim.android.demo.getui.gtc.provider"
+550-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:26:13-70
+551            android:exported="false" />
+551-->[com.getui:gtc:3.1.12.0] D:\gradle_files\caches\transforms-3\959a5bff3d8658282a2f1be45127298a\transformed\jetified-gtc-3.1.12.0\AndroidManifest.xml:27:13-37
+552
+553        <meta-data
+553-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:12:9-14:48
+554            android:name="com.huawei.hms.client.appid"
+554-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:13:13-55
+555            android:value="" />
+555-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:14:13-45
+556
+557        <service
+557-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:16:9-23:19
+558            android:name="com.igexin.sdk.HmsPushMessageService"
+558-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:17:13-64
+559            android:exported="false"
+559-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:18:13-37
+560            android:process=":pushservice" >
+560-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:19:13-43
+561            <intent-filter>
+561-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:20:13-22:29
+562                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+562-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:21:17-81
+562-->[com.getui.opt:hwp:3.1.1] D:\gradle_files\caches\transforms-3\a647d6a18d81a60096acb1054b668974\transformed\jetified-hwp-3.1.1\AndroidManifest.xml:21:25-78
+563            </intent-filter>
+564        </service>
+565
+566        <meta-data
+566-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:23:9-25:37
+567            android:name="MIPUSH_SDK_VERSION_CODE"
+567-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:24:13-51
+568            android:value="50010" />
+568-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:25:13-34
+569        <meta-data
+569-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:26:9-28:39
+570            android:name="MIPUSH_SDK_VERSION_NAME"
+570-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:27:13-51
+571            android:value="5_1_0-C" />
+571-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:28:13-36
+572        <meta-data
+572-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:29:9-31:51
+573            android:name="MIPUSH_APPID"
+573-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:30:13-40
+574            android:value="XM_" />
+574-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:31:13-48
+575        <meta-data
+575-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:32:9-34:52
+576            android:name="MIPUSH_APPKEY"
+576-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:33:13-41
+577            android:value="XM_" /> <!-- 非小米系统才会用到 -->
+577-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:34:13-49
+578        <!-- <service -->
+579        <!-- android:name="com.xiaomi.push.service.XMPushService" -->
+580        <!-- android:enabled="true" -->
+581        <!-- android:process=":pushservice" /> -->
+582        <!-- 非小米系统才会用到 -->
+583        <!-- <service -->
+584        <!-- android:name="com.xiaomi.push.service.XMJobService" -->
+585        <!-- android:enabled="true" -->
+586        <!-- android:exported="false" -->
+587        <!-- android:permission="android.permission.BIND_JOB_SERVICE" -->
+588        <!-- android:process=":pushservice" /> -->
+589        <!-- del -->
+590        <!-- <receiver -->
+591        <!-- android:name="com.xiaomi.push.service.receivers.PingReceiver" -->
+592        <!-- android:exported="false" -->
+593        <!-- android:process=":pushservice"> -->
+594        <!-- <intent-filter> -->
+595        <!-- <action android:name="com.xiaomi.push.PING_TIMER" /> -->
+596        <!-- </intent-filter> -->
+597        <!-- </receiver> -->
+598        <service
+598-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:62:9-67:46
+599            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+599-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:63:13-68
+600            android:enabled="true"
+600-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:64:13-35
+601            android:exported="true"
+601-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:65:13-36
+602            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+602-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:66:13-75
+603            android:process=":pushservice" />
+603-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:67:13-43
+604        <service
+604-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:68:9-71:46
+605            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+605-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:69:13-70
+606            android:enabled="true"
+606-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:70:13-35
+607            android:process=":pushservice" /> <!-- xiaomi SDK内部会判断无静态注册的话会内部动态注册 -->
+607-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:71:13-43
+608        <!-- <receiver -->
+609        <!-- android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" -->
+610        <!-- android:exported="true" -->
+611        <!-- android:process=":pushservice"> -->
+612        <!-- <intent-filter> -->
+613        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+614        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+615        <!-- </intent-filter> -->
+616        <!-- </receiver> -->
+617        <receiver
+617-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:84:9-97:20
+618            android:name="com.igexin.sdk.MiuiPushReceiver"
+618-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:85:13-59
+619            android:exported="true"
+619-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:86:13-36
+620            android:process=":pushservice" >
+620-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:87:13-43
+621            <intent-filter>
+621-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:88:13-90:29
+622                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+622-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:89:17-76
+622-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:89:25-73
+623            </intent-filter>
+624            <intent-filter>
+624-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:91:13-93:29
+625                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+625-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:92:17-76
+625-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:92:25-73
+626            </intent-filter>
+627            <intent-filter>
+627-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:94:13-96:29
+628                <action android:name="com.xiaomi.mipush.ERROR" />
+628-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:95:17-66
+628-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:95:25-63
+629            </intent-filter>
+630        </receiver> <!-- 支持VoIP和场景化通过透明页点击跳转 -->
+631        <!-- 对于targetSdkVersion变更为S及以上的应用，需要接入MiPushSDK 4.9.1及以上版本(海外版需接入4.8.6及以上版本)，并声明NotificationClickedActivity -->
+632        <activity
+632-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:101:9-111:20
+633            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+633-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:102:13-77
+634            android:enabled="true"
+634-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:103:13-35
+635            android:excludeFromRecents="true"
+635-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:104:13-46
+636            android:exported="true"
+636-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:105:13-36
+637            android:launchMode="singleInstance"
+637-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:106:13-48
+638            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+638-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:107:13-72
+639            <meta-data
+639-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:108:13-110:46
+640                android:name="supportStyle"
+640-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:109:17-44
+641                android:value="scene|voip" />
+641-->[com.getui.opt:xmp:3.3.0] D:\gradle_files\caches\transforms-3\370e7ac6585cf6aa15c5ca36bd341770\transformed\jetified-xmp-3.3.0\AndroidManifest.xml:110:17-43
+642        </activity>
+643
+644        <meta-data
+644-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:15:9-17:50
+645            android:name="OPPOPUSH_APPKEY"
+645-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:16:13-43
+646            android:value="OP_" />
+646-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:17:13-47
+647        <meta-data
+647-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:18:9-20:53
+648            android:name="OPPOPUSH_APPSECRET"
+648-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:19:13-46
+649            android:value="OP_" />
+649-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:20:13-50
+650
+651        <service
+651-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:22:9-30:19
+652            android:name="com.igexin.sdk.OppoPushService"
+652-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:23:13-58
+653            android:exported="true"
+653-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:24:13-36
+654            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+654-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:25:13-77
+655            android:process=":pushservice" >
+655-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:26:13-43
+656            <intent-filter>
+656-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:27:13-29:29
+657                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+657-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:28:17-85
+657-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:28:25-82
+658            </intent-filter>
+659        </service>
+660        <service
+660-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:31:9-40:19
+661            android:name="com.igexin.sdk.OppoAppPushService"
+661-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:32:13-61
+662            android:exported="true"
+662-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:33:13-36
+663            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+663-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:34:13-77
+664            android:process=":pushservice" >
+664-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:35:13-43
+665            <intent-filter>
+665-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:36:13-39:29
+666                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+666-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:37:17-84
+666-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:37:25-81
+667                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+667-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:38:17-82
+667-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:38:25-79
+668            </intent-filter>
+669        </service>
+670
+671        <meta-data
+671-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:42:9-44:36
+672            android:name="sdkVersion"
+672-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:43:13-38
+673            android:value="3100" />
+673-->[com.assist-v3:oppo:3.2.0] D:\gradle_files\caches\transforms-3\64eb5b8bb5df65ba38e764c8c9b0f76e\transformed\jetified-oppo-3.2.0\AndroidManifest.xml:44:13-33
+674        <meta-data
+674-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:14:9-16:47
+675            android:name="com.vivo.push.api_key"
+675-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:15:13-49
+676            android:value="" />
+676-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:16:13-44
+677        <meta-data
+677-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:17:9-19:46
+678            android:name="com.vivo.push.app_id"
+678-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:18:13-48
+679            android:value="" />
+679-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:19:13-43
+680
+681        <receiver
+681-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:21:9-30:20
+682            android:name="com.igexin.sdk.VivoPushMessageReceiver"
+682-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:22:13-66
+683            android:exported="false"
+683-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:23:13-37
+684            android:process=":pushservice" >
+684-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:24:13-43
+685            <intent-filter>
+685-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:25:13-29:29
+686
+687                <!-- 接收 push 消息 -->
+688                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+688-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:28:17-77
+688-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:28:25-74
+689            </intent-filter>
+690        </receiver> <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
+691        <meta-data
+691-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:33:9-35:35
+692            android:name="sdk_version_vivo"
+692-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:34:13-44
+693            android:value="484" />
+693-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:35:13-32
+694
+695        <service
+695-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:37:9-41:46
+696            android:name="com.vivo.push.sdk.service.CommandClientService"
+696-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:38:13-74
+697            android:exported="true"
+697-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:39:13-36
+698            android:permission="com.push.permission.UPSTAGESERVICE"
+698-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:40:13-68
+699            android:process=":pushservice" />
+699-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:41:13-43
+700
+701        <meta-data
+701-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:43:9-45:295
+702            android:name="local_iv"
+702-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:44:13-36
+703            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" />
+703-->[com.assist-v3:vivo:3.1.0] D:\gradle_files\caches\transforms-3\3c086df41303863626caea70faf88a8c\transformed\jetified-vivo-3.1.0\AndroidManifest.xml:45:13-292
+704        <meta-data
+704-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:25:9-27:50
+705            android:name="MEIZUPUSH_APPID"
+705-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:26:13-43
+706            android:value="MZ_" />
+706-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:27:13-47
+707        <meta-data
+707-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:28:9-30:51
+708            android:name="MEIZUPUSH_APPKEY"
+708-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:29:13-44
+709            android:value="MZ_" />
+709-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:30:13-48
+710
+711        <receiver
+711-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:32:9-50:20
+712            android:name="com.igexin.sdk.FlymePushReceiver"
+712-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:33:13-60
+713            android:exported="true"
+713-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:34:13-36
+714            android:process=":pushservice" >
+714-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:35:13-43
+715            <intent-filter>
+715-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:36:13-49:29
+716
+717                <!-- 接收push消息 -->
+718                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+718-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:39:17-78
+718-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:39:25-75
+719                <!-- 接收register消息 -->
+720                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+720-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:41:17-88
+720-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:41:25-85
+721                <!-- 接收unregister消息 -->
+722                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+722-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:43:17-90
+722-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:43:25-87
+723                <!-- 兼容低版本Flyme3推送服务配置 -->
+724                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+724-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:45:17-77
+724-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:45:25-74
+725                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+725-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:46:17-72
+725-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:46:25-69
+726
+727                <category android:name="io.openim.android.demo" />
+727-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:48:17-61
+727-->[com.getui.opt:mzp:3.2.2] D:\gradle_files\caches\transforms-3\c98e1a370b0078a925f188cbfaf588f7\transformed\jetified-mzp-3.2.2\AndroidManifest.xml:48:27-58
+728            </intent-filter>
+729        </receiver>
+730
+731        <service
+731-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:21:9-31:19
+732            android:name="com.igexin.assist.control.stp.StpService"
+732-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:22:13-68
+733            android:exported="true"
+733-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:23:13-36
+734            android:permission="com.getui.vendor.push.permission"
+734-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:24:13-66
+735            android:process=":pushservice" >
+735-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:25:13-43
+736            <intent-filter>
+736-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:26:13-30:29
+737                <category android:name="android.intent.category.DEFAULT" />
+737-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:27:17-76
+737-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:27:27-73
+738
+739                <action android:name="com.sdk.ups.action.io.openim.android.demo" />
+739-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:29:17-78
+739-->[com.getui.opt:ups:3.0.3] D:\gradle_files\caches\transforms-3\a4f859ee132dca102c2a4a3edf18aaf6\transformed\jetified-ups-3.0.3\AndroidManifest.xml:29:25-75
+740            </intent-filter>
+741        </service>
+742
+743        <meta-data
+743-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:18:9-20:47
+744            android:name="com.hihonor.push.app_id"
+744-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:19:13-51
+745            android:value="" />
+745-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:20:13-44
+746
+747        <service
+747-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:22:9-29:19
+748            android:name="com.igexin.sdk.HonorPushMessageService"
+748-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:23:13-66
+749            android:exported="false"
+749-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:24:13-37
+750            android:process=":pushservice" >
+750-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:25:13-43
+751            <intent-filter>
+751-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:26:13-28:29
+752                <action android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+752-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:27:17-82
+752-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:27:25-79
+753            </intent-filter>
+754        </service>
+755
+756        <receiver
+756-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:31:9-39:20
+757            android:name="com.hihonor.push.sdk.PushReceiver"
+757-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:32:13-61
+758            android:exported="true"
+758-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:33:13-36
+759            android:permission="io.openim.android.demo.hihonor.permission.PROCESS_PUSH_MSG" >
+759-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:34:13-86
+760            <intent-filter>
+760-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:35:13-38:29
+761                <action android:name="com.hihonor.push.action.REGISTRATION" />
+761-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:36:17-79
+761-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:36:25-76
+762                <action android:name="com.hihonor.push.action.RECEIVE" />
+762-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:37:17-74
+762-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:37:25-71
+763            </intent-filter>
+764        </receiver>
+765
+766        <provider
+766-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:41:9-45:39
+767            android:name="com.hihonor.push.sdk.init.AutoInitProvider"
+767-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:42:13-70
+768            android:authorities="io.openim.android.demo.hihonor.autoinitprovider"
+768-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:43:13-76
+769            android:exported="false"
+769-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:44:13-37
+770            android:initOrder="500" />
+770-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:45:13-36
+771
+772        <meta-data
+772-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:47:9-49:41
+773            android:name="com.hihonor.push.sdk_version"
+773-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:48:13-56
+774            android:value="6.0.4.200" />
+774-->[com.getui.opt:honor:3.2.0] D:\gradle_files\caches\transforms-3\c93cbe3d2065b2fe014403acc749227b\transformed\jetified-honor-3.2.0\AndroidManifest.xml:49:13-38
+775
+776        <receiver
+776-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:25:9-37:20
+777            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+777-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:26:13-75
+778            android:directBootAware="true"
+778-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:27:13-43
+779            android:exported="true"
+779-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:28:13-36
+780            android:permission="io.openim.android.demo.permission.PROCESS_PUSH_MSG" >
+780-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:29:13-78
+781            <intent-filter>
+781-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:30:13-36:29
+782
+783                <!-- Mandatory, be used to receive notification bar message click event. -->
+784                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+784-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:33:17-85
+784-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:33:25-82
+785                <!-- Optional, compatible with old huawei phones. -->
+786                <action android:name="com.huawei.intent.action.PUSH" />
+786-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:35:17-72
+786-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:35:25-69
+787            </intent-filter>
+788        </receiver>
+789        <receiver
+789-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:38:9-50:20
+790            android:name="com.huawei.hms.support.api.push.PushReceiver"
+790-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:39:13-72
+791            android:directBootAware="true"
+791-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:40:13-43
+792            android:exported="true"
+792-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:41:13-36
+793            android:permission="io.openim.android.demo.permission.PROCESS_PUSH_MSG" >
+793-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:42:13-78
+794            <intent-filter>
+794-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:43:13-49:29
+795
+796                <!-- Mandatory, be used to receive tokens. -->
+797                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+797-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:46:17-86
+797-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:46:25-83
+798                <!-- Mandatory, be used to receive messages. -->
+799                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+799-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:48:17-81
+799-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:48:25-78
+800            </intent-filter>
+801        </receiver> <!-- Definition of receiving service for notification bar and pass-through message of non-huawei mobile phone. -->
+802        <service
+802-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:53:9-63:19
+803            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+803-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:54:13-81
+804            android:directBootAware="true"
+804-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:55:13-43
+805            android:enabled="true"
+805-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:56:13-35
+806            android:exported="true"
+806-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:57:13-36
+807            android:process=":pushservice" >
+807-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:58:13-43
+808            <intent-filter>
+808-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:59:13-62:29
+809                <action android:name="com.huawei.push.msg.NOTIFY_MSG" />
+809-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:60:17-73
+809-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:60:25-70
+810                <action android:name="com.huawei.push.msg.PASSBY_MSG" />
+810-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:61:17-73
+810-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:61:25-70
+811            </intent-filter>
+812        </service>
+813
+814        <provider
+814-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:65:9-70:89
+815            android:name="com.huawei.hms.support.api.push.PushProvider"
+815-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:66:13-72
+816            android:authorities="io.openim.android.demo.huawei.push.provider"
+816-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:67:13-72
+817            android:exported="true"
+817-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:68:13-36
+818            android:readPermission="io.openim.android.demo.permission.PUSH_PROVIDER"
+818-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:69:13-79
+819            android:writePermission="io.openim.android.demo.permission.PUSH_WRITE_PROVIDER" />
+819-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:70:13-86
+820
+821        <meta-data
+821-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:72:9-74:46
+822            android:name="com.huawei.hms.client.service.name:push"
+822-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:73:13-67
+823            android:value="push:6.7.0.300" />
+823-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:74:13-43
+824        <meta-data
+824-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:75:9-77:33
+825            android:name="com.huawei.hms.min_api_level:push:push"
+825-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:76:13-66
+826            android:value="1" />
+826-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:77:13-30
+827
+828        <activity
+828-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:79:9-81:40
+829            android:name="com.huawei.hms.support.api.push.TransActivity"
+829-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:80:13-73
+830            android:exported="false" />
+830-->[com.huawei.hms:push:6.7.0.300] D:\gradle_files\caches\transforms-3\d71b4a4c722f1ee7cd5f7c29d9d23c71\transformed\jetified-push-6.7.0.300\AndroidManifest.xml:81:13-37
+831        <activity
+831-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:21:9-26:67
+832            android:name="com.yzq.zxinglibrary.android.CaptureActivity"
+832-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:22:13-72
+833            android:configChanges="orientation|screenSize"
+833-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:23:13-59
+834            android:screenOrientation="portrait"
+834-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:24:13-49
+835            android:theme="@style/Theme.AppCompat.NoActionBar"
+835-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:25:13-63
+836            android:windowSoftInputMode="adjustPan|stateHidden" />
+836-->[com.github.yuzhiqiang1993:zxing:2.2.9] D:\gradle_files\caches\transforms-3\99ff626a14b9736c5a39e29ebfe5c67b\transformed\jetified-zxing-2.2.9\AndroidManifest.xml:26:13-64
+837
+838        <provider
+838-->[com.liulishuo.okdownload:okdownload:1.0.7] D:\gradle_files\caches\transforms-3\a39d157a22d7186b6f80a5f8d549c49c\transformed\jetified-okdownload-1.0.7\AndroidManifest.xml:9:9-12:40
+839            android:name="com.liulishuo.okdownload.OkDownloadProvider"
+839-->[com.liulishuo.okdownload:okdownload:1.0.7] D:\gradle_files\caches\transforms-3\a39d157a22d7186b6f80a5f8d549c49c\transformed\jetified-okdownload-1.0.7\AndroidManifest.xml:10:13-71
+840            android:authorities="io.openim.android.demo.com.liulishuo.okdownload"
+840-->[com.liulishuo.okdownload:okdownload:1.0.7] D:\gradle_files\caches\transforms-3\a39d157a22d7186b6f80a5f8d549c49c\transformed\jetified-okdownload-1.0.7\AndroidManifest.xml:11:13-76
+841            android:exported="false" />
+841-->[com.liulishuo.okdownload:okdownload:1.0.7] D:\gradle_files\caches\transforms-3\a39d157a22d7186b6f80a5f8d549c49c\transformed\jetified-okdownload-1.0.7\AndroidManifest.xml:12:13-37
+842        <provider
+842-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+843            android:name="androidx.startup.InitializationProvider"
+843-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+844            android:authorities="io.openim.android.demo.androidx-startup"
+844-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+845            android:exported="false" >
+845-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+846            <meta-data
+846-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+847                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+847-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+848                android:value="androidx.startup" />
+848-->[androidx.emoji2:emoji2:1.2.0] D:\gradle_files\caches\transforms-3\8c37d2e318a4821edad4e9ed966510b2\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+849            <meta-data
+849-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\gradle_files\caches\transforms-3\3d069b62a37b75ea157c7167eec00acf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+850                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+850-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\gradle_files\caches\transforms-3\3d069b62a37b75ea157c7167eec00acf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+851                android:value="androidx.startup" />
+851-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\gradle_files\caches\transforms-3\3d069b62a37b75ea157c7167eec00acf\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+852        </provider>
+853
+854        <service
+854-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:18:9-20:39
+855            android:name="com.meizu.cloud.pushsdk.NotificationService"
+855-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:19:13-71
+856            android:exported="true" />
+856-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:20:13-36
+857
+858        <receiver
+858-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:22:9-29:20
+859            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+859-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:23:13-72
+860            android:exported="false"
+860-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:24:13-37
+861            android:permission="com.meizu.flyme.permission.PUSH" >
+861-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:25:13-65
+862            <intent-filter>
+862-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:26:13-28:29
+863                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+863-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:27:17-82
+863-->[com.meizu.flyme.internet:push-internal:4.1.4] D:\gradle_files\caches\transforms-3\494d35d269c1daf3893958b96010cd2f\transformed\jetified-push-internal-4.1.4\AndroidManifest.xml:27:25-79
+864            </intent-filter>
+865        </receiver>
+866
+867        <provider
+867-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:10:9-14:39
+868            android:name="com.huawei.hms.aaid.InitProvider"
+868-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:11:13-60
+869            android:authorities="io.openim.android.demo.aaidinitprovider"
+869-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:12:13-68
+870            android:exported="false"
+870-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:13:13-37
+871            android:initOrder="500" />
+871-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:14:13-36
+872
+873        <meta-data
+873-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:16:9-18:52
+874            android:name="com.huawei.hms.client.service.name:opendevice"
+874-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:17:13-73
+875            android:value="opendevice:6.7.0.300" />
+875-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:18:13-49
+876        <meta-data
+876-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:19:9-21:33
+877            android:name="com.huawei.hms.min_api_level:opendevice:push"
+877-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:20:13-72
+878            android:value="1" />
+878-->[com.huawei.hms:opendevice:6.7.0.300] D:\gradle_files\caches\transforms-3\ac217c4a66f1491b2b36a2b952b4a38c\transformed\jetified-opendevice-6.7.0.300\AndroidManifest.xml:21:13-30
+879
+880        <service android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+880-->[com.liulishuo.filedownloader:library:1.7.6] D:\gradle_files\caches\transforms-3\05a4741f31d459d3720f9e20d638b5f0\transformed\jetified-library-1.7.6\AndroidManifest.xml:12:9-118
+880-->[com.liulishuo.filedownloader:library:1.7.6] D:\gradle_files\caches\transforms-3\05a4741f31d459d3720f9e20d638b5f0\transformed\jetified-library-1.7.6\AndroidManifest.xml:12:18-115
+881        <service
+881-->[com.liulishuo.filedownloader:library:1.7.6] D:\gradle_files\caches\transforms-3\05a4741f31d459d3720f9e20d638b5f0\transformed\jetified-library-1.7.6\AndroidManifest.xml:13:9-15:49
+882            android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService"
+882-->[com.liulishuo.filedownloader:library:1.7.6] D:\gradle_files\caches\transforms-3\05a4741f31d459d3720f9e20d638b5f0\transformed\jetified-library-1.7.6\AndroidManifest.xml:14:13-108
+883            android:process=":filedownloader" /> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+883-->[com.liulishuo.filedownloader:library:1.7.6] D:\gradle_files\caches\transforms-3\05a4741f31d459d3720f9e20d638b5f0\transformed\jetified-library-1.7.6\AndroidManifest.xml:15:13-46
+884        <meta-data
+884-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:15:9-17:46
+885            android:name="com.huawei.hms.client.service.name:base"
+885-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:16:13-67
+886            android:value="base:6.6.0.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+886-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:17:13-43
+887        <meta-data
+887-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:20:9-22:33
+888            android:name="com.huawei.hms.min_api_level:base:hmscore"
+888-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:21:13-69
+889            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+889-->[com.huawei.hms:base:6.6.0.300] D:\gradle_files\caches\transforms-3\d72cb3c3d30591915194c6edbc1848b1\transformed\jetified-base-6.6.0.300\AndroidManifest.xml:22:13-30
+890        <meta-data
+890-->[com.huawei.hms:availableupdate:6.6.0.300] D:\gradle_files\caches\transforms-3\b415accd7d200b2224f3e093ef3a86b5\transformed\jetified-availableupdate-6.6.0.300\AndroidManifest.xml:17:9-19:35
+891            android:name="availableLoaded"
+891-->[com.huawei.hms:availableupdate:6.6.0.300] D:\gradle_files\caches\transforms-3\b415accd7d200b2224f3e093ef3a86b5\transformed\jetified-availableupdate-6.6.0.300\AndroidManifest.xml:18:13-43
+892            android:value="yes" />
+892-->[com.huawei.hms:availableupdate:6.6.0.300] D:\gradle_files\caches\transforms-3\b415accd7d200b2224f3e093ef3a86b5\transformed\jetified-availableupdate-6.6.0.300\AndroidManifest.xml:19:13-32
+893
+894        <activity
+894-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:10:9-21:20
+895            android:name="com.huawei.hms.activity.BridgeActivity"
+895-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:11:13-66
+896            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+896-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:12:13-131
+897            android:excludeFromRecents="true"
+897-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:13:13-46
+898            android:exported="false"
+898-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:14:13-37
+899            android:hardwareAccelerated="true"
+899-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:15:13-47
+900            android:screenOrientation="behind"
+900-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:16:13-47
+901            android:theme="@style/Base_Translucent" >
+901-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:17:13-52
+902            <meta-data
+902-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:18:13-20:77
+903                android:name="hwc-theme"
+903-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:19:17-41
+904                android:value="androidhwext:style/Theme.Emui.Translucent" />
+904-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:20:17-74
+905        </activity>
+906        <activity
+906-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:22:9-26:20
+907            android:name="com.huawei.hms.activity.EnableServiceActivity"
+907-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:23:13-73
+908            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+908-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:24:13-106
+909            android:exported="false" >
+909-->[com.huawei.hms:ui:6.6.0.300] D:\gradle_files\caches\transforms-3\9b2af9cc0d1ee5da8d7ce6d4e30cce9c\transformed\jetified-ui-6.6.0.300\AndroidManifest.xml:25:13-37
+910        </activity>
+911
+912        <provider
+912-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:11:9-14:40
+913            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+913-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:12:13-90
+914            android:authorities="io.openim.android.demo.AGCInitializeProvider"
+914-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:13:13-73
+915            android:exported="false" />
+915-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:14:13-37
+916
+917        <service
+917-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:16:9-18:40
+918            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+918-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:17:13-70
+919            android:exported="false" />
+919-->[com.huawei.agconnect:agconnect-core:1.6.5.300] D:\gradle_files\caches\transforms-3\98caa710e65c87538ed1b894b4dabdf2\transformed\jetified-agconnect-core-1.6.5.300\AndroidManifest.xml:18:13-37
+920    </application>
+921
+922</manifest>
