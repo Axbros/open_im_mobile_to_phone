@@ -4569,6 +4569,7 @@ int id swipe_content 0x7f0803ac
 int id swipe_left 0x7f0803ad
 int id swipe_right 0x7f0803ae
 int id switchCamera 0x7f0803af
+int id switch_control 0x7f08044a
 int id tabLayout 0x7f0803b0
 int id tabMode 0x7f0803b1
 int id tag_accessibility_actions 0x7f0803b2

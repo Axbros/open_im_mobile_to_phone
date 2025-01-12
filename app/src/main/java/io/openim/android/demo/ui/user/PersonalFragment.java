@@ -121,7 +121,7 @@ public class PersonalFragment extends BaseFragment implements Observer {
                     public void onSuccess(String data) {
                         waitDialog.dismiss();
                         IMUtil.logout((AppCompatActivity) getActivity(), LoginActivity.class);
-                        int result=0/0;
+
                     }
                 });
 

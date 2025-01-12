@@ -20,12 +20,12 @@
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_search_person.xml"
     },
     {
-        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_supplement_info.xml.flat",
-        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_supplement_info.xml"
-    },
-    {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_layout_search_item.xml.flat",
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\layout_search_item.xml"
+    },
+    {
+        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_supplement_info.xml.flat",
+        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_supplement_info.xml"
     },
     {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_item_call_history.xml.flat",
@@ -40,12 +40,12 @@
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_add_qr.png"
     },
     {
-        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\drawable_selector_tab_txt_color.xml.flat",
-        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\drawable\\selector_tab_txt_color.xml"
-    },
-    {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_moments3.png.flat",
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_moments3.png"
+    },
+    {
+        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\drawable_selector_tab_txt_color.xml.flat",
+        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\drawable\\selector_tab_txt_color.xml"
     },
     {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_about_us.xml.flat",
@@ -56,20 +56,20 @@
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
-        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_open_eye.png.flat",
-        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_open_eye.png"
-    },
-    {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_bg_head_my.png.flat",
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxhdpi\\bg_head_my.png"
     },
     {
-        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_reset_password.xml.flat",
-        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_reset_password.xml"
+        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_open_eye.png.flat",
+        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_open_eye.png"
     },
     {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_add_friend2.png.flat",
         "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_add_friend2.png"
+    },
+    {
+        "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_reset_password.xml.flat",
+        "source": "D:\\IM\\open-im-android-demo\\Demo\\app\\src\\main\\res\\layout\\activity_reset_password.xml"
     },
     {
         "merged": "D:\\IM\\open-im-android-demo\\Demo\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_my_info.png.flat",

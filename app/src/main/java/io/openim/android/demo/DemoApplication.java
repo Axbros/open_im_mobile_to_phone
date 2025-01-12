@@ -165,7 +165,8 @@ public class DemoApplication extends BaseApp {
         listenerIMOffline();
         listenerIMGroup();
         CallingService callingService= (CallingService) ARouter.getInstance().build(Routes.Service.CALLING).navigation();
-        if (null!=callingService){
+        boolean isAdmin =SharedPreferencesUtil.get(this).getBoolean(Constants.K_IS_ADMIN);
+        if (null!=callingService && !isAdmin){//add listener when enable isAdmin
             IMEvent.getInstance().addAdvanceMsgListener(new OnAdvanceMsgListener() {
                 @Override
                 public void onRecvNewMessage(Message msg) {
@@ -206,6 +207,9 @@ public class DemoApplication extends BaseApp {
 
                 }
             });
+        }
+        else{
+            System.out.println("ToPhone:已开启过滤通知模式");
         }
 
     }

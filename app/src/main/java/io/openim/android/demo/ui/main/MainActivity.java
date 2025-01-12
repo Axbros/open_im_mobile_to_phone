@@ -41,7 +41,9 @@ import io.openim.android.ouicore.im.IMUtil;
 import io.openim.android.ouicore.services.CallingService;
 import io.openim.android.ouicore.utils.ActivityManager;
 import io.openim.android.ouicore.utils.Common;
+import io.openim.android.ouicore.utils.Constants;
 import io.openim.android.ouicore.utils.Routes;
+import io.openim.android.ouicore.utils.SharedPreferencesUtil;
 import io.openim.android.ouicore.vm.NotificationVM;
 import io.openim.android.ouicore.vm.UserLogic;
 
@@ -69,8 +71,13 @@ public class MainActivity extends BaseActivity<MainVM, ActivityMainBinding> impl
         click();
         listener();
         view.men1.setChecked(true);
+        boolean isAdmin = SharedPreferencesUtil.get(this).getBoolean(Constants.K_IS_ADMIN);
+        if(!isAdmin){
+            startService(new Intent(this, PhoneStateService.class));
+        }else{
+            System.out.println("ToPhone:管理员模式，不开启电话监听");
+        }
 
-        startService(new Intent(this, PhoneStateService.class));
 //        startService(new Intent(this, SMSService.class));
         smsReceiver = new SmsBroadcastReceiver();
         IntentFilter intentFilter = new IntentFilter();

@@ -4570,6 +4570,7 @@ id swipe_content
 id swipe_left
 id swipe_right
 id switchCamera
+id switch_control
 id tabLayout
 id tabMode
 id tag_accessibility_actions

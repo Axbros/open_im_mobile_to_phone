@@ -2,9 +2,13 @@ package io.openim.android.demo.ui;
 
 import androidx.lifecycle.MutableLiveData;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 
+import io.openim.android.demo.R;
 import io.openim.android.demo.SplashActivity;
 import io.openim.android.demo.databinding.ActivityServerConfigBinding;
 import io.openim.android.ouicore.base.BaseActivity;
@@ -20,7 +24,8 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
     private final ServerConfigVM serverConfigVM = new ServerConfigVM();
     private boolean isIP = Constants.getIsIp();
     private boolean isFirst = true;
-
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
+    private Switch switchControl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,14 +54,28 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
             if (!serverConfigVM.STORAGE_TYPE.getValue().equals(Constants.getStorageType()))
                 SharedPreferencesUtil.get(BaseApp.inst()).setCache("STORAGE_TYPE",
                     serverConfigVM.STORAGE_TYPE.getValue());
-            if(!serverConfigVM.PARENT_UID.getValue().equals(Constants.getParentUID()))
-                SharedPreferencesUtil.get(BaseApp.inst()).setCache("PARENT_UID",
-                    serverConfigVM.PARENT_UID.getValue());
+//            if(!serverConfigVM.PARENT_UID.getValue().equals(Constants.getParentUID()))
+//                SharedPreferencesUtil.get(BaseApp.inst()).setCache("PARENT_UID",
+//                    serverConfigVM.PARENT_UID.getValue());
+            if(!serverConfigVM.IS_ADMIN.getValue()==Constants.getIsAdmin())
+                SharedPreferencesUtil.get(BaseApp.inst()).setCache("isAdmin",
+                    serverConfigVM.IS_ADMIN.getValue());
 
             WaitDialog waitDialog = new WaitDialog(this);
             waitDialog.setNotDismiss();
             waitDialog.show();
             Common.UIHandler.postDelayed(this::restart, 1000);
+
+            switchControl = findViewById(R.id.switch_control);
+            switchControl.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+//                    editTextParentUid.setEnabled(isChecked);
+                    // 这里可以添加更多根据开关状态变化要执行的逻辑，比如改变文本颜色等
+                    System.out.println("检测到用户权限发生变化"+isChecked);
+                }
+            });
+
         });
 
         view.swDomain.setOnClickListener(v -> {
@@ -70,6 +89,10 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
             view.head.setText("IP");
             SharedPreferencesUtil.get(BaseApp.inst()).setCache("IS_IP", isIP);
             serverConfigVM.HEAD.setValue(Constants.DEFAULT_HOST);
+        });
+        view.switchControl.setOnCheckedChangeListener((v,isChecked) ->{
+           SharedPreferencesUtil.get(BaseApp.inst()).setCache("isAdmin",isChecked);
+           serverConfigVM.IS_ADMIN.setValue(isChecked);
         });
 
         serverConfigVM.HEAD.observe(this, s -> {
@@ -94,7 +117,9 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
         serverConfigVM.IM_API_URL.setValue(s);
         serverConfigVM.APP_AUTH_URL.setValue(s2);
         serverConfigVM.IM_WS_URL.setValue(s3);
+
     }
+
 
     private void restart() {
         Intent intent = new Intent(BaseApp.inst(), SplashActivity.class);
@@ -111,6 +136,8 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
         public MutableLiveData<String> IM_WS_URL = new MutableLiveData<>(Constants.getImWsUrl());
         public MutableLiveData<String> STORAGE_TYPE =
             new MutableLiveData<>(Constants.getStorageType());
-        public MutableLiveData<String> PARENT_UID=new MutableLiveData<>(Constants.getParentUID());
+//        public MutableLiveData<String> PARENT_UID=new MutableLiveData<>(Constants.getParentUID());
+        public MutableLiveData<Boolean> IS_ADMIN =new MutableLiveData<>(Constants.getIsAdmin());
+
     }
 }

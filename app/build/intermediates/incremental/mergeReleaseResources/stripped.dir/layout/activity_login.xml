@@ -83,20 +83,20 @@
                         android:orientation="vertical"
                         android:visibility="gone">
 
-<!--                        <TextView-->
-<!--                            android:id="@+id/mailTv"-->
-<!--                            android:layout_width="wrap_content"-->
-<!--                            android:layout_height="match_parent"-->
-<!--                            android:text="@string/mail"-->
-<!--                            android:textColor="#333333"-->
-<!--                            android:textSize="14sp" />-->
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/mailTv"-->
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="match_parent"-->
+                        <!--                            android:text="@string/mail"-->
+                        <!--                            android:textColor="#333333"-->
+                        <!--                            android:textSize="14sp" />-->
 
-<!--                        <View-->
-<!--                            android:id="@+id/mailVv"-->
-<!--                            android:layout_width="29dp"-->
-<!--                            android:layout_height="1dp"-->
-<!--                            android:background="#1D6BED"-->
-<!--                            android:visibility="invisible" />-->
+                        <!--                        <View-->
+                        <!--                            android:id="@+id/mailVv"-->
+                        <!--                            android:layout_width="29dp"-->
+                        <!--                            android:layout_height="1dp"-->
+                        <!--                            android:background="#1D6BED"-->
+                        <!--                            android:visibility="invisible" />-->
 
                     </LinearLayout>
 
@@ -106,7 +106,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="6dp"
-                    android:tag="binding_3"                                                                                                                                                            
+                    android:text="ToPhone账号"
                     android:textColor="#ff171a1d"
                     android:textSize="14sp" />
 

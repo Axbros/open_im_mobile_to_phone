@@ -115,6 +115,7 @@ id submit
 id surePassword
 id swDomain
 id swIP
+id switch_control
 id time
 id tips
 id title
