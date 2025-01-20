@@ -28,6 +28,7 @@ import io.openim.android.ouicore.utils.Constants;
 import io.openim.android.ouicore.utils.Obs;
 import io.openim.android.ouicore.utils.OnDedrepClickListener;
 import io.openim.android.ouicore.utils.Routes;
+import io.openim.android.ouicore.utils.SharedPreferencesUtil;
 import io.openim.android.ouicore.vm.PreviewMediaVM;
 import io.openim.android.ouicore.vm.UserLogic;
 import io.openim.android.ouicore.widget.CommonDialog;
@@ -85,9 +86,9 @@ public class PersonalFragment extends BaseFragment implements Observer {
         view.accountSetting.setOnClickListener(v->{
             startActivity(new Intent(getActivity(),AccountSettingActivity.class));
         });
-        view.aboutLy.setOnClickListener(v -> {
-            startActivity(new Intent(getActivity(),AboutUsActivity.class));
-        });
+//        view.aboutLy.setOnClickListener(v -> {
+//            startActivity(new Intent(getActivity(),AboutUsActivity.class));
+//        });
         view.personalInfo.setOnClickListener(new OnDedrepClickListener(1000) {
             @Override
             public void click(View v) {

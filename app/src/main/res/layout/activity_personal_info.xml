@@ -49,37 +49,37 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:id="@+id/avatarLy"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:background="@drawable/sty_radius_6_white"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/avatarLy"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:background="@drawable/sty_radius_6_white"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp">-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/avatar"
-                        android:textColor="#ff333333"
-                        android:textSize="18sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/avatar"-->
+<!--                        android:textColor="#ff333333"-->
+<!--                        android:textSize="18sp" />-->
 
-                    <io.openim.android.ouicore.widget.AvatarImage
-                        android:id="@+id/avatar"
-                        android:layout_width="@dimen/avatar_size2"
-                        android:layout_height="@dimen/avatar_size2"
-                        android:layout_marginTop="7dp"
-                        android:layout_marginBottom="7dp"
-                        />
+<!--                    <io.openim.android.ouicore.widget.AvatarImage-->
+<!--                        android:id="@+id/avatar"-->
+<!--                        android:layout_width="@dimen/avatar_size2"-->
+<!--                        android:layout_height="@dimen/avatar_size2"-->
+<!--                        android:layout_marginTop="7dp"-->
+<!--                        android:layout_marginBottom="7dp"-->
+<!--                        />-->
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:src="@mipmap/ic_right" />
-                </LinearLayout>
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:src="@mipmap/ic_right" />-->
+<!--                </LinearLayout>-->
 
 
                 <LinearLayout
@@ -114,98 +114,98 @@
                 </LinearLayout>
 
 
-                <LinearLayout
-                    android:id="@+id/genderLy"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:background="@color/white"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/genderLy"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp">-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/gender"
-                        android:textColor="#ff333333"
-                        android:textSize="18sp" />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/gender"-->
+<!--                        android:textColor="#ff333333"-->
+<!--                        android:textSize="18sp" />-->
 
-                    <TextView
-                        android:id="@+id/gender"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ff999999"
-                        android:textSize="16sp" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/gender"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#ff999999"-->
+<!--                        android:textSize="16sp" />-->
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:src="@mipmap/ic_right" />
-                </LinearLayout>
-
-
-                <LinearLayout
-                    android:id="@+id/birthdayLy"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:background="@drawable/sty_radius_6_white"
-                    android:gravity="center_vertical"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
-
-                    <TextView
-
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/birthday"
-                        android:textColor="#ff333333"
-                        android:textSize="18sp" />
-
-                    <TextView
-                        android:id="@+id/birthday"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ff999999"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:src="@mipmap/ic_right" />
-                </LinearLayout>
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:src="@mipmap/ic_right" />-->
+<!--                </LinearLayout>-->
 
 
-                <LinearLayout
-                    android:id="@+id/phoneNum"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:layout_marginTop="11dp"
-                    android:background="@drawable/sty_radius_6_white"
-                    android:gravity="center_vertical"
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/birthdayLy"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:background="@drawable/sty_radius_6_white"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp">-->
 
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
+<!--                    <TextView-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/phone_num"
-                        android:textColor="#ff333333"
-                        android:textSize="18sp" />
-                    <TextView
-                        android:id="@+id/phoneNumTv"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ff999999"
-                        android:textSize="16sp"
-                        />
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/birthday"-->
+<!--                        android:textColor="#ff333333"-->
+<!--                        android:textSize="18sp" />-->
 
-                </LinearLayout>
+<!--                    <TextView-->
+<!--                        android:id="@+id/birthday"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#ff999999"-->
+<!--                        android:textSize="16sp" />-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:src="@mipmap/ic_right" />-->
+<!--                </LinearLayout>-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/phoneNum"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:layout_marginTop="11dp"-->
+<!--                    android:background="@drawable/sty_radius_6_white"-->
+<!--                    android:gravity="center_vertical"-->
+
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/phone_num"-->
+<!--                        android:textColor="#ff333333"-->
+<!--                        android:textSize="18sp" />-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/phoneNumTv"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#ff999999"-->
+<!--                        android:textSize="16sp"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
 
                 <LinearLayout
                     android:id="@+id/parentUID"
@@ -235,36 +235,36 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:id="@+id/email"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:gravity="center_vertical"
-                    android:background="@drawable/sty_radius_6_white"
-                    android:paddingLeft="20dp"
-                    android:paddingRight="20dp">
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/email"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="58dp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:background="@drawable/sty_radius_6_white"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="20dp">-->
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/mail"
-                        android:textColor="#ff333333"
-                        android:textSize="18sp" />
-                    <TextView
-                        android:id="@+id/emailTV"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="#ff999999"
-                        android:textSize="16sp"
-                        />
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="@string/mail"-->
+<!--                        android:textColor="#ff333333"-->
+<!--                        android:textSize="18sp" />-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/emailTV"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textColor="#ff999999"-->
+<!--                        android:textSize="16sp"-->
+<!--                        />-->
 
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="10dp"
-                        android:src="@mipmap/ic_right" />
-                </LinearLayout>
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingLeft="10dp"-->
+<!--                        android:src="@mipmap/ic_right" />-->
+<!--                </LinearLayout>-->
 
 
             </LinearLayout>

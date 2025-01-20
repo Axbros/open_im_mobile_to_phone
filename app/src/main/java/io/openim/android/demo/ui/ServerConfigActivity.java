@@ -33,8 +33,8 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
         sink();
         view.setServerConfigVM(serverConfigVM);
         view.restart.setOnClickListener(v -> {
-            if (!serverConfigVM.HEAD.getValue().equals(Constants.getHost()))
-                SharedPreferencesUtil.get(BaseApp.inst()).setCache("DEFAULT_IP",
+            if (!serverConfigVM.HEAD.getValue().equals(Constants.getHostURL()))
+                SharedPreferencesUtil.get(BaseApp.inst()).setCache("DEFAULT_HOST_URL",
                     serverConfigVM.HEAD.getValue());
 
             if (!serverConfigVM.IM_API_URL.getValue().equals(Constants.getImApiUrl()))
@@ -82,7 +82,7 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
             isIP = false;
             view.head.setText("域名");
             SharedPreferencesUtil.get(BaseApp.inst()).setCache("IS_IP", isIP);
-            serverConfigVM.HEAD.setValue(Constants.DEFAULT_HOST);
+            serverConfigVM.HEAD.setValue(Constants.DEFAULT_HOST_URL);
         });
         view.swIP.setOnClickListener(v -> {
             isIP = true;
@@ -100,16 +100,12 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
                 isFirst = false;
                 return;
             }
-            if (isIP) {
-                setAddress("http://" + s + ":10002",
-                    "http://" + s + ":10008/",
-                    "ws://" + s + ":10001");
-            } else {
+
                 setAddress(
-                    "https://" + s + "/api",
-                    "https://" + s + "/chat/",
-                    "wss://" + s + "/msg_gateway");
-            }
+                    "http://" + s + "/api",
+                    "http://" + s + "/chat/",
+                    "ws://" + s + "/msg_gateway");
+
         });
     }
 
@@ -129,7 +125,7 @@ public class ServerConfigActivity extends BaseActivity<BaseViewModel, ActivitySe
     }
 
     public static class ServerConfigVM {
-        public MutableLiveData<String> HEAD = new MutableLiveData<>(Constants.getHost());
+        public MutableLiveData<String> HEAD = new MutableLiveData<>(Constants.getHostURL());
         public MutableLiveData<String> IM_API_URL = new MutableLiveData<>(Constants.getImApiUrl());
         public MutableLiveData<String> APP_AUTH_URL =
             new MutableLiveData<>(Constants.getAppAuthUrl());

@@ -86,7 +86,7 @@ public class LoginVM extends BaseViewModel<LoginVM.ViewAction> {
                                                 break;
                                             }
                                         }else{
-                                            SharedPreferencesUtil.get(BaseApp.inst()).setCache("PARENT_UID", "没有绑定甲方，请联系管理员");
+                                            SharedPreferencesUtil.get(BaseApp.inst()).setCache("PARENT_UID", "没有绑定对应关系，请联系管理员");
                                         }
                                     }
                                 });

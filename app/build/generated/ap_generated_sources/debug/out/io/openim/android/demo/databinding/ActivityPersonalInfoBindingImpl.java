@@ -15,20 +15,10 @@ public class ActivityPersonalInfoBindingImpl extends ActivityPersonalInfoBinding
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.back, 2);
-        sViewsWithIds.put(R.id.avatarLy, 3);
-        sViewsWithIds.put(R.id.avatar, 4);
-        sViewsWithIds.put(R.id.nickNameLy, 5);
-        sViewsWithIds.put(R.id.nickName, 6);
-        sViewsWithIds.put(R.id.genderLy, 7);
-        sViewsWithIds.put(R.id.gender, 8);
-        sViewsWithIds.put(R.id.birthdayLy, 9);
-        sViewsWithIds.put(R.id.birthday, 10);
-        sViewsWithIds.put(R.id.phoneNum, 11);
-        sViewsWithIds.put(R.id.phoneNumTv, 12);
-        sViewsWithIds.put(R.id.parentUID, 13);
-        sViewsWithIds.put(R.id.parent_uidTv, 14);
-        sViewsWithIds.put(R.id.email, 15);
-        sViewsWithIds.put(R.id.emailTV, 16);
+        sViewsWithIds.put(R.id.nickNameLy, 3);
+        sViewsWithIds.put(R.id.nickName, 4);
+        sViewsWithIds.put(R.id.parentUID, 5);
+        sViewsWithIds.put(R.id.parent_uidTv, 6);
     }
     // views
     @NonNull
@@ -41,25 +31,15 @@ public class ActivityPersonalInfoBindingImpl extends ActivityPersonalInfoBinding
     // Inverse Binding Event Handlers
 
     public ActivityPersonalInfoBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 17, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 7, sIncludes, sViewsWithIds));
     }
     private ActivityPersonalInfoBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (io.openim.android.ouicore.widget.AvatarImage) bindings[4]
-            , (android.widget.LinearLayout) bindings[3]
             , (bindings[2] != null) ? io.openim.android.ouicore.databinding.ViewBackBinding.bind((android.view.View) bindings[2]) : null
-            , (android.widget.TextView) bindings[10]
-            , (android.widget.LinearLayout) bindings[9]
-            , (android.widget.LinearLayout) bindings[15]
-            , (android.widget.TextView) bindings[16]
-            , (android.widget.TextView) bindings[8]
-            , (android.widget.LinearLayout) bindings[7]
-            , (android.widget.TextView) bindings[6]
+            , (android.widget.TextView) bindings[4]
+            , (android.widget.LinearLayout) bindings[3]
             , (android.widget.LinearLayout) bindings[5]
-            , (android.widget.LinearLayout) bindings[13]
-            , (android.widget.TextView) bindings[14]
-            , (android.widget.LinearLayout) bindings[11]
-            , (android.widget.TextView) bindings[12]
+            , (android.widget.TextView) bindings[6]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

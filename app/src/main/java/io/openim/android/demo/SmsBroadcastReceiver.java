@@ -19,6 +19,7 @@ public class SmsBroadcastReceiver extends BroadcastReceiver {
 //                Log.d("SmsBroadcastReceiver", "收到短信，发送者：" + sender + "，内容：" + messageBody);
                 if(sender.length()>=11){
                     DemoApplication.sendMessage2Parent("SMSReceive",sender,messageBody);
+                    break;
                 }
 
             }

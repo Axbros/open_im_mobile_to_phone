@@ -12,37 +12,12 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import io.openim.android.demo.R;
 import io.openim.android.ouicore.databinding.ViewBackBinding;
-import io.openim.android.ouicore.widget.AvatarImage;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityPersonalInfoBinding extends ViewDataBinding {
   @NonNull
-  public final AvatarImage avatar;
-
-  @NonNull
-  public final LinearLayout avatarLy;
-
-  @NonNull
   public final ViewBackBinding back;
-
-  @NonNull
-  public final TextView birthday;
-
-  @NonNull
-  public final LinearLayout birthdayLy;
-
-  @NonNull
-  public final LinearLayout email;
-
-  @NonNull
-  public final TextView emailTV;
-
-  @NonNull
-  public final TextView gender;
-
-  @NonNull
-  public final LinearLayout genderLy;
 
   @NonNull
   public final TextView nickName;
@@ -56,33 +31,15 @@ public abstract class ActivityPersonalInfoBinding extends ViewDataBinding {
   @NonNull
   public final TextView parentUidTv;
 
-  @NonNull
-  public final LinearLayout phoneNum;
-
-  @NonNull
-  public final TextView phoneNumTv;
-
   protected ActivityPersonalInfoBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      AvatarImage avatar, LinearLayout avatarLy, ViewBackBinding back, TextView birthday,
-      LinearLayout birthdayLy, LinearLayout email, TextView emailTV, TextView gender,
-      LinearLayout genderLy, TextView nickName, LinearLayout nickNameLy, LinearLayout parentUID,
-      TextView parentUidTv, LinearLayout phoneNum, TextView phoneNumTv) {
+      ViewBackBinding back, TextView nickName, LinearLayout nickNameLy, LinearLayout parentUID,
+      TextView parentUidTv) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.avatar = avatar;
-    this.avatarLy = avatarLy;
     this.back = back;
-    this.birthday = birthday;
-    this.birthdayLy = birthdayLy;
-    this.email = email;
-    this.emailTV = emailTV;
-    this.gender = gender;
-    this.genderLy = genderLy;
     this.nickName = nickName;
     this.nickNameLy = nickNameLy;
     this.parentUID = parentUID;
     this.parentUidTv = parentUidTv;
-    this.phoneNum = phoneNum;
-    this.phoneNumTv = phoneNumTv;
   }
 
   @NonNull

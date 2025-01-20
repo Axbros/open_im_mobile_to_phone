@@ -22,9 +22,6 @@ public final class FragmentPersonalBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
-  public final LinearLayout aboutLy;
-
-  @NonNull
   public final LinearLayout accountSetting;
 
   @NonNull
@@ -51,12 +48,11 @@ public final class FragmentPersonalBinding implements ViewBinding {
   @NonNull
   public final LinearLayout userIdLy;
 
-  private FragmentPersonalBinding(@NonNull LinearLayout rootView, @NonNull LinearLayout aboutLy,
+  private FragmentPersonalBinding(@NonNull LinearLayout rootView,
       @NonNull LinearLayout accountSetting, @NonNull AvatarImage avatar, @NonNull TextView name,
       @NonNull LinearLayout personalInfo, @NonNull ImageView qrCode, @NonNull LinearLayout quit,
       @NonNull ImageView topBg, @NonNull TextView userId, @NonNull LinearLayout userIdLy) {
     this.rootView = rootView;
-    this.aboutLy = aboutLy;
     this.accountSetting = accountSetting;
     this.avatar = avatar;
     this.name = name;
@@ -95,12 +91,6 @@ public final class FragmentPersonalBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.aboutLy;
-      LinearLayout aboutLy = ViewBindings.findChildViewById(rootView, id);
-      if (aboutLy == null) {
-        break missingId;
-      }
-
       id = R.id.accountSetting;
       LinearLayout accountSetting = ViewBindings.findChildViewById(rootView, id);
       if (accountSetting == null) {
@@ -155,8 +145,8 @@ public final class FragmentPersonalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentPersonalBinding((LinearLayout) rootView, aboutLy, accountSetting, avatar,
-          name, personalInfo, qrCode, quit, topBg, userId, userIdLy);
+      return new FragmentPersonalBinding((LinearLayout) rootView, accountSetting, avatar, name,
+          personalInfo, qrCode, quit, topBg, userId, userIdLy);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

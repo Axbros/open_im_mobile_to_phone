@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -33,17 +34,22 @@ public abstract class ActivityServerConfigBinding extends ViewDataBinding {
   @NonNull
   public final Button swIP;
 
+  @NonNull
+  public final Switch switchControl;
+
   @Bindable
   protected ServerConfigActivity.ServerConfigVM mServerConfigVM;
 
   protected ActivityServerConfigBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ViewBackBinding back, TextView head, Button restart, Button swDomain, Button swIP) {
+      ViewBackBinding back, TextView head, Button restart, Button swDomain, Button swIP,
+      Switch switchControl) {
     super(_bindingComponent, _root, _localFieldCount);
     this.back = back;
     this.head = head;
     this.restart = restart;
     this.swDomain = swDomain;
     this.swIP = swIP;
+    this.switchControl = switchControl;
   }
 
   public abstract void setServerConfigVM(

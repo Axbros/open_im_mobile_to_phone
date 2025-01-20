@@ -3714,7 +3714,6 @@ id UZBEK
 id VIETNAMESE
 id VOICEMAIL
 id VOIP
-id aboutLy
 id accelerate
 id accept
 id accessibility_action_clickable_span
@@ -3991,8 +3990,6 @@ id edt1
 id edt2
 id edt3
 id elastic
-id email
-id emailTV
 id embed
 id emoji
 id emojiIv
@@ -4349,8 +4346,6 @@ id periodicDeletion
 id periodicDeletionStr
 id periodicDeletionTime
 id personalInfo
-id phoneNum
-id phoneNumTv
 id phoneTv
 id phoneVv
 id picture
@@ -4391,6 +4386,7 @@ id push_pure_bigview_expanded
 id push_pure_close
 id qrCode
 id qrCodeRl
+id qrCodeText
 id quit
 id quitGroup
 id quoteContent1
@@ -4665,6 +4661,7 @@ id tv_update
 id tv_version
 id tv_volume
 id txt
+id uid
 id unRead
 id unchecked
 id uniform

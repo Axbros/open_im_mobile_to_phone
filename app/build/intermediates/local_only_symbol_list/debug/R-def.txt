@@ -15,7 +15,6 @@ drawable selector_open_eyes
 drawable selector_own
 drawable selector_tab_txt_color
 drawable splash_shape_gradient
-id aboutLy
 id accountSetting
 id accountTv
 id action
@@ -47,8 +46,6 @@ id edit
 id edt1
 id edt2
 id edt3
-id email
-id emailTV
 id empty
 id english
 id eyes
@@ -91,8 +88,6 @@ id parent_uidTv
 id part
 id password
 id personalInfo
-id phoneNum
-id phoneNumTv
 id phoneTv
 id phoneVv
 id protocol
