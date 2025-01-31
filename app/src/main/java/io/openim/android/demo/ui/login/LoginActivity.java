@@ -1,18 +1,12 @@
 package io.openim.android.demo.ui.login;
 
 import android.content.Intent;
-
 import io.openim.android.demo.ui.ServerConfigActivity;
 import io.openim.android.demo.ui.main.MainActivity;
-
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.text.method.HideReturnsTransformationMethod;
-import android.text.method.PasswordTransformationMethod;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
-import android.view.View;
 import android.widget.Toast;
 
 
@@ -31,11 +25,12 @@ import io.openim.android.ouicore.base.BaseApp;
 import io.openim.android.ouicore.utils.Common;
 import io.openim.android.ouicore.utils.Constants;
 import io.openim.android.ouicore.utils.LanguageUtil;
-import io.openim.android.ouicore.utils.OnDedrepClickListener;
 import io.openim.android.ouicore.utils.SharedPreferencesUtil;
 import io.openim.android.ouicore.utils.SinkHelper;
-import io.openim.android.ouicore.widget.BottomPopDialog;
 import io.openim.android.ouicore.widget.WaitDialog;
+import android.content.Context;
+import android.provider.Settings;
+
 
 public class LoginActivity extends BaseActivity<LoginVM, ActivityLoginBinding> implements LoginVM.ViewAction {
 
@@ -47,6 +42,12 @@ public class LoginActivity extends BaseActivity<LoginVM, ActivityLoginBinding> i
     //验证码倒计时
     private int countdown = 60;
 
+    private String AndroidID = "";
+
+    public String setAndroidId(Context context) {
+        this.AndroidID = Settings.Secure.getString(context.getContentResolver(), Settings.Secure.ANDROID_ID);
+        return this.AndroidID;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,23 +57,27 @@ public class LoginActivity extends BaseActivity<LoginVM, ActivityLoginBinding> i
         bindViewDataBinding(ActivityLoginBinding.inflate(getLayoutInflater()));
         setLightStatus();
         SinkHelper.get(this).setTranslucentStatus(null);
+        setAndroidId(this);
 
         initView();
 
         click();
-        listener();
+        //获取设备唯一标识码
+        //通过唯一标识码注册
+        //如果
     }
 
     void initView() {
         waitDialog = new WaitDialog(this);
         view.loginContent.setLoginVM(vm);
         view.setLoginVM(vm);
+        view.version.setText("ToPhone App Version "+Common.getAppPackageInfo().versionName);
 
-        CountryCodePicker.Language language = buildDefaultLanguage();
-//        view.loginContent.countryCode.changeDefaultLanguage(language);
-
-        view.version.setText(Common.getAppPackageInfo().versionName);
-        vm.isPhone.setValue(SharedPreferencesUtil.get(this).getInteger(Constants.K_LOGIN_TYPE)==0);
+        view.loginContent.edt1.setEnabled(false);
+        view.loginContent.edt1.setText(this.AndroidID);
+        vm.account.setValue(this.AndroidID);
+        System.out.println();
+        vm.isPhone.setValue(SharedPreferencesUtil.get(this).getInteger(Constants.K_LOGIN_TYPE) == 0);
     }
 
     public static CountryCodePicker.Language buildDefaultLanguage() {
@@ -84,130 +89,26 @@ public class LoginActivity extends BaseActivity<LoginVM, ActivityLoginBinding> i
         return language;
     }
 
-    private void listener() {
-        vm.isPhone.observe(this, v -> {
-            if (v) {
-                view.phoneTv.setTextColor(Color.parseColor("#1D6BED"));
-//                view.mailTv.setTextColor(Color.parseColor("#333333"));
-                view.phoneVv.setVisibility(View.VISIBLE);
-//                view.mailVv.setVisibility(View.INVISIBLE);
-            } else {
-//                view.mailTv.setTextColor(Color.parseColor("#1D6BED"));
-                view.phoneTv.setTextColor(Color.parseColor("#333333"));
-//                view.mailVv.setVisibility(View.VISIBLE);
-                view.phoneVv.setVisibility(View.INVISIBLE);
-            }
-            view.loginContent.edt1.setText("");
-//            view.loginContent.edt2.setText("");
-            submitEnabled();
-            view.loginContent.edt1.setHint(v ?
-                getString(io.openim.android.ouicore.R.string.input_phone) :
-                getString(io.openim.android.ouicore.R.string.input_mail));
-        });
-        vm.account.observe(this, v -> submitEnabled());
-        vm.pwd.observe(this, v -> submitEnabled());
-
-    }
-
-    private void toRegister() {
-        startActivity(new Intent(this, RegisterActivity.class));
-    }
 
     private final GestureDetector gestureDetector = new GestureDetector(BaseApp.inst(),
         new GestureDetector.SimpleOnGestureListener() {
-        @Override
-        public boolean onDoubleTap(MotionEvent e) {
-            startActivity(new Intent(LoginActivity.this, ServerConfigActivity.class));
-            return super.onDoubleTap(e);
-        }
-    });
+            @Override
+            public boolean onDoubleTap(MotionEvent e) {
+                startActivity(new Intent(LoginActivity.this, ServerConfigActivity.class));
+                return super.onDoubleTap(e);
+            }
+        });
 
     private void click() {
-        view.welcome.setOnTouchListener((v, event) -> gestureDetector.onTouchEvent(event));
-//        view.changeLoginType.setOnClickListener(v -> {
-//            vm.isPhone.setValue( !vm.isPhone.val());
-//        });
-
-        view.loginContent.clear.setOnClickListener(v -> view.loginContent.edt1.setText(""));
-//        view.loginContent.clearPwd.setOnClickListener(v -> view.loginContent.edt2.setText(""));
-//        view.loginContent.eyes.setOnCheckedChangeListener((buttonView, isChecked) -> view.loginContent.edt2.setTransformationMethod(isChecked ? HideReturnsTransformationMethod.getInstance() : PasswordTransformationMethod.getInstance()));
-        view.protocol.setOnCheckedChangeListener((buttonView, isChecked) -> submitEnabled());
-//        view.registerTv.setOnClickListener(new OnDedrepClickListener() {
-//            @Override
-//            public void click(View v) {
-//                BottomPopDialog dialog =new BottomPopDialog(LoginActivity.this);
-//                dialog.getMainView().menu1.setText(io.openim.android.ouicore.R.string.phone_register);
-//                dialog.getMainView().menu2.setText(io.openim.android.ouicore.R.string.email_register);
-//                dialog.getMainView().menu3.setOnClickListener(v1 -> dialog.dismiss());
-//                dialog.getMainView().menu1.setOnClickListener(v1 -> {
-//                    vm.isPhone.setValue(true);
-//                    vm.isFindPassword=false;
-//                    toRegister();
-//                });
-//                dialog.getMainView().menu2.setOnClickListener(v1 -> {
-//                    vm.isPhone.setValue(false);
-//                    vm.isFindPassword=false;
-//                    toRegister();
-//                });
-//                dialog.show();
-//            }
-//        });
         view.submit.setOnClickListener(v -> {
-//            vm.areaCode.setValue("+" + view.loginContent.countryCode.getSelectedCountryCode());
             waitDialog.show();
             vm.login(isVCLogin ? vm.pwd.getValue() : null, 3);
         });
-//        view.loginContent.vcLogin.setOnClickListener(v -> {
-//            isVCLogin = !isVCLogin;
-//            updateEdit2();
-//        });
-//        view.loginContent.getVC.setOnClickListener(v -> {
-//            //正在倒计时中...不触发操作
-//            if (countdown != 60) return;
-//            vm.getVerificationCode(3);
-//        });
-//        view.loginContent.forgotPasswordTv.setOnClickListener(v -> {
-//            BottomPopDialog dialog =new BottomPopDialog(LoginActivity.this);
-//            dialog.getMainView().menu1.setText(io.openim.android.ouicore.R.string.forgot_pasword_by_phone);
-//            dialog.getMainView().menu2.setText(io.openim.android.ouicore.R.string.forgot_pasword_by_email);
-//            dialog.getMainView().menu3.setOnClickListener(v1 -> dialog.dismiss());
-//            dialog.getMainView().menu1.setOnClickListener(v1 -> {
-//                vm.isPhone.setValue(true);
-//                vm.isFindPassword=true;
-//                toRegister();
-//            });
-//            dialog.getMainView().menu2.setOnClickListener(v1 -> {
-//                vm.isPhone.setValue(false);
-//                vm.isFindPassword=true;
-//                toRegister();
-//            });
-//            dialog.show();
-//        });
     }
 
     @Override
     public void onConfigurationChanged(@NonNull Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-    }
-
-//    private void updateEdit2() {
-//        if (isVCLogin) {
-////            view.loginContent.vcTitle.setText(io.openim.android.ouicore.R.string.vc);
-////            view.loginContent.vcLogin.setText(io.openim.android.ouicore.R.string.password_login);
-////            view.loginContent.getVC.setVisibility(View.VISIBLE);
-////            view.loginContent.eyes.setVisibility(View.GONE);
-////            view.loginContent.edt2.setHint(io.openim.android.ouicore.R.string.input_verification_code);
-//        } else {
-////            view.loginContent.vcTitle.setText(io.openim.android.ouicore.R.string.password);
-////            view.loginContent.vcLogin.setText(io.openim.android.ouicore.R.string.vc_login);
-//            view.loginContent.getVC.setVisibility(View.GONE);
-//            view.loginContent.eyes.setVisibility(View.VISIBLE);
-//            view.loginContent.edt2.setHint(io.openim.android.ouicore.R.string.input_password);
-//        }
-//    }
-
-    private void submitEnabled() {
-        view.submit.setEnabled(!vm.account.getValue().isEmpty());
     }
 
     @Override

@@ -21,17 +21,6 @@ public interface OpenIMService {
     @POST("account/register")
     Observable<ResponseBody> register(@Body RequestBody requestBody);
 
-    @POST("account/password/change")
-    Observable<ResponseBody> changePassword(@Body RequestBody requestBody);
-
-    @POST("account/code/send")
-    Observable<ResponseBody> getVerificationCode(@Body RequestBody requestBody);
-
-    @POST("account/code/verify")
-    Observable<ResponseBody> checkVerificationCode(@Body RequestBody requestBody);
-
-    @POST("account/password/reset")
-    Observable<ResponseBody> resetPassword(@Body RequestBody requestBody);
 
 
     static <T> Function<ResponseBody, T> turn(Class<T> tClass) {

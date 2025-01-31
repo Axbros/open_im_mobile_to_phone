@@ -8,22 +8,17 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RadioButton;
-
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentTransaction;
-
-
 import com.alibaba.android.arouter.core.LogisticsCenter;
 import com.alibaba.android.arouter.facade.Postcard;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
 import com.hjq.window.EasyWindow;
 import com.igexin.sdk.PushManager;
-
 import io.openim.android.demo.PhoneStateService;
 import io.openim.android.demo.R;
-
 import io.openim.android.demo.SmsBroadcastReceiver;
 import io.openim.android.demo.databinding.ActivityMainBinding;
 import io.openim.android.demo.ui.login.LoginActivity;
@@ -31,7 +26,6 @@ import io.openim.android.demo.ui.user.PersonalFragment;
 import io.openim.android.demo.vm.LoginVM;
 import io.openim.android.demo.vm.MainVM;
 import io.openim.android.ouicontact.ui.fragment.ContactFragment;
-import io.openim.android.ouicontact.vm.ContactVM;
 import io.openim.android.ouiconversation.ui.fragment.ConversationListFragment;
 import io.openim.android.ouicore.base.BaseActivity;
 import io.openim.android.ouicore.base.BaseApp;

@@ -4386,7 +4386,6 @@ id push_pure_bigview_expanded
 id push_pure_close
 id qrCode
 id qrCodeRl
-id qrCodeText
 id quit
 id quitGroup
 id quoteContent1
@@ -4661,7 +4660,6 @@ id tv_update
 id tv_version
 id tv_volume
 id txt
-id uid
 id unRead
 id unchecked
 id uniform

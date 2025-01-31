@@ -23,9 +23,7 @@ public class AccountSettingActivity extends BaseActivity<PersonalVM, ActivityAcc
     }
 
     private void listener() {
-        view.changePassword.setOnClickListener(v -> {
-            startActivity(new Intent(this,ChangePasswordActivity.class));
-        });
+
         view.languageSetting.setOnClickListener(v -> {
             startActivity(new Intent(this,LanguageSettingActivity.class));
         });

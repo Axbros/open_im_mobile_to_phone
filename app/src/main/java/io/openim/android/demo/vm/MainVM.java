@@ -152,6 +152,7 @@ public class MainVM extends BaseViewModel<LoginVM.ViewAction> implements OnConnL
         List<String> ids = new ArrayList<>();
         ids.add(BaseApp.inst().loginCertificate.userID);
         Parameter parameter = new Parameter().add("userIDs", ids);
+
         N.API(OneselfService.class).getUsersFullInfo(parameter.buildJsonBody()).map(OpenIMService.turn(HashMap.class)).compose(N.IOMain()).subscribe(new NetObserver<HashMap>(getContext()) {
             @Override
             protected void onFailure(Throwable e) {
